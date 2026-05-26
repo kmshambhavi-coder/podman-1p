@@ -4,7 +4,20 @@
         "Integration": {},
         "Mappings": {},
         "Visual Family": {},
-        "Playbook": {},
+        "Playbook": {
+            "Google Workspace Starting Playbook": "A paragraph is a distinct section of writing that contains one or more sentences. It serves as a structural building block for organizing ideas, with each paragraph typically focusing on a single, controlling idea or topic",
+            "Simple Playbook": "A paragraph is a distinct section of writing that contains one or more sentences. It serves as a structural building block for organizing ideas, with each paragraph typically focusing on a single, controlling idea or topic",
+            "Imported Playbook": "A paragraph is a distinct section of writing that contains one or more sentences. It serves as a structural building block for organizing ideas, with each paragraph typically focusing on a single, controlling idea or topic",
+            "blockwidgetwithPlaybook": "A paragraph is a distinct section of writing that contains one or more sentences. It serves as a structural building block for organizing ideas, with each paragraph typically focusing on a single, controlling idea or topic",
+            "Carbon Black Cloud Remediation": "A paragraph is a distinct section of writing that contains one or more sentences. It serves as a structural building block for organizing ideas, with each paragraph typically focusing on a single, controlling idea or topic",
+            "Google SecOps Enrichment": "A paragraph is a distinct section of writing that contains one or more sentences. It serves as a structural building block for organizing ideas, with each paragraph typically focusing on a single, controlling idea or topic",
+            "GTI Enrichment": "A paragraph is a distinct section of writing that contains one or more sentences. It serves as a structural building block for organizing ideas, with each paragraph typically focusing on a single, controlling idea or topic",
+            "Google Workspace Enrichment": "A paragraph is a distinct section of writing that contains one or more sentences. It serves as a structural building block for organizing ideas, with each paragraph typically focusing on a single, controlling idea or topic",
+            "MITRE Enrichment": "A paragraph is a distinct section of writing that contains one or more sentences. It serves as a structural building block for organizing ideas, with each paragraph typically focusing on a single, controlling idea or topic",
+            "Google Workspace Containment": "A paragraph is a distinct section of writing that contains one or more sentences. It serves as a structural building block for organizing ideas, with each paragraph typically focusing on a single, controlling idea or topic",
+            "Blocktoattachinaplaybook": "A paragraph is a distinct section of writing that contains one or more sentences. It serves as a structural building block for organizing ideas, with each paragraph typically focusing on a single, controlling idea or topic",
+            "Imported Block": "A paragraph is a distinct section of writing that contains one or more sentences. It serves as a structural building block for organizing ideas, with each paragraph typically focusing on a single, controlling idea or topic"
+        },
         "Connector": {},
         "Job": {},
         "Block": {}
