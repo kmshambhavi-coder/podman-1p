@@ -14,4 +14,5 @@
 |Imported Block|Imported block An embedded workflow that can receive inputs and return an output.|
 |Imported Playbook|Imported Playbook|
 |Simple Playbook|Simple playbook|
+|Carbon Black Cloud Remediation||
 

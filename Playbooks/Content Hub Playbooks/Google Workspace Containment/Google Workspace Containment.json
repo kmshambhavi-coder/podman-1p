@@ -760,7 +760,7 @@
                     "creationTimeUnixTimeInMs": 0,
                     "modificationTimeUnixTimeInMs": 0,
                     "additionalProperties": {},
-                    "InstanceDisplayName": "Siemplify_1"
+                    "InstanceDisplayName": null
                 },
                 {
                     "name": "MessageToAssignee",
@@ -943,7 +943,7 @@
                     "creationTimeUnixTimeInMs": 0,
                     "modificationTimeUnixTimeInMs": 0,
                     "additionalProperties": {},
-                    "InstanceDisplayName": "Siemplify_1"
+                    "InstanceDisplayName": null
                 },
                 {
                     "name": "MessageToAssignee",
@@ -1452,7 +1452,7 @@
                     "creationTimeUnixTimeInMs": 0,
                     "modificationTimeUnixTimeInMs": 0,
                     "additionalProperties": {},
-                    "InstanceDisplayName": "Siemplify_1"
+                    "InstanceDisplayName": null
                 },
                 {
                     "name": "MessageToAssignee",
