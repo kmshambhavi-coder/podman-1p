@@ -1,0 +1,70 @@
+{
+    "cases": [
+        {
+            "creatorUserId": null,
+            "events": [
+                {
+                    "_fields": {
+                        "baseEventIds": [],
+                        "parentEventId": 0,
+                        "deviceEventClassId": "Cybersixgill Actionable Alerts",
+                        "startTime": "1628725568675",
+                        "endTime": "1628725568675",
+                        "deviceProduct": "Cybersixgill Actionable Alerts"
+                    },
+                    "_rawDataFields": {
+                        "alert_id": "61cad1ef6bbfbaa3404379c9",
+                        "alert_name": "Recent mentions of your domains in the underground",
+                        "alert_type": "PercolatedQueryBasedManagedAlertRule",
+                        "alert_type_id": "619cbe2551f07dc17b05d8b4",
+                        "portal_URL": "https://portal.cybersixgill.com/#/?actionable_alert=61cad1ef6bbfbaa3404379c9",
+                        "description": "The following is a summary of recent mentions of your domains in the cyber underground.",
+                        "deviceProduct": "Cybersixgill Actionable Alerts",
+                        "name": "Cybersixgill Actionabel Alerts",
+                        "deviceEventClassId": "Cybersixgill Actionable Alerts",
+                        "alert_RawJson": "In this section you will see Cybersixgill's Raw json data of an alert"
+                    },
+                    "environment": null,
+                    "sourceSystemName": null,
+                    "extensions": []
+                }
+            ],
+            "environment": null,
+            "sourceSystemName": "Cybersixgill Actionable Alerts",
+            "ticketId": null,
+            "description": null,
+            "displayId": null,
+            "reason": null,
+            "name": "Cybersixgill Actionable Alerts",
+            "deviceVendor": "Cybersixgill Actionable Alerts",
+            "deviceProduct": "Cybersixgill Actionable Alerts",
+            "startTime": 1628725568675,
+            "endTime": 1628725568675,
+            "type": 0,
+            "priority": -1,
+            "ruleGenerator": "Cybersixgill Actionable Alerts",
+            "sourceGroupingIdentifier": null,
+            "playbookTriggerKeywords": [],
+            "extensions": [
+                {
+                    "key": "Cybersixgill Actionable Alerts",
+                    "value": "Cybersixgill Actionable Alerts"
+                }
+            ],
+            "attachments": null,
+            "isTrimmed": false,
+            "dataType": 1,
+            "sourceType": 1,
+            "sourceSystemUrl": null,
+            "sourceRuleIdentifier": null,
+            "siemAlertId": null,
+            "updatedFields": [],
+            "alertUpdateSupported": false,
+            "alertMetadata": {},
+            "dataAccessScope": null
+        }
+    ],
+    "type": 0,
+    "connectorIdentifier": null,
+    "debugOutput": null
+}
