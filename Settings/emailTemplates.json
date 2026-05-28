@@ -1,0 +1,38 @@
+[
+    {
+        "name": "projects/project/locations/location/instances/instance/emailTemplates/4",
+        "templateType": "Template",
+        "author": "5564eee8-a9d8-4497-8bd6-1ef6f75458a2",
+        "id": 4,
+        "content": "Sample Template",
+        "displayName": "@#$%^&*",
+        "environments": "[\"Default Environment\"]"
+    },
+    {
+        "name": "projects/project/locations/location/instances/instance/emailTemplates/3",
+        "templateType": "Template",
+        "author": "5564eee8-a9d8-4497-8bd6-1ef6f75458a2",
+        "id": 3,
+        "content": "Subject: Introduction: [Your Name] \u2013 [Reason for reaching out / Common connection]\n\nDear [Recipient's Name],\n\nMy name is [Your Name], and I am a [Your Profession/Role] at [Your Company/University]. I've been following your work with [mention a specific project, company achievement, or article they wrote], and I am incredibly impressed by your approach to [specific industry topic].\n\nI am currently exploring [mention your goal, e.g., new strategies in UX design / career paths in product management] and would love to learn from your experience.\n\nIf your schedule permits, would you be open to a brief, 15-minute virtual coffee chat sometime next week? I would greatly appreciate your insights.\n\nThank you for your time and consideration.\n\nWarmly,\n\n[Your Name] [Link to LinkedIn Profile]",
+        "displayName": "123456789",
+        "environments": "[\"Default Environment\",\"Newevn001\"]"
+    },
+    {
+        "name": "projects/project/locations/location/instances/instance/emailTemplates/2",
+        "templateType": "Template",
+        "author": "5564eee8-a9d8-4497-8bd6-1ef6f75458a2",
+        "id": 2,
+        "content": "Hi [Recipient's Name],\n\nI hope you're having a great week.\n\nI'm following up on my previous email regarding [briefly mention the topic, e.g., the marketing proposal sent last Tuesday]. I wanted to check if you've had a chance to review it or if you need any adjustments.\n\nPlease let me know your thoughts when you have a moment.\n\nBest,\n\n[Your Name] [Your Title]\n\n[Your Company]",
+        "displayName": "First_template",
+        "environments": "[\"Newevn001\"]"
+    },
+    {
+        "name": "projects/project/locations/location/instances/instance/emailTemplates/1",
+        "templateType": "Template",
+        "author": "5564eee8-a9d8-4497-8bd6-1ef6f75458a2",
+        "id": 1,
+        "content": "Subject: Request for [Project Name/Topic] \u2013 [Your Name]\n\nDear [Recipient's Name],\n\nI hope this email finds you well.\n\nI am currently working on [Project Name/Task] and require your assistance with [specific item, e.g., approving the budget / providing the Q2 data]. Having this information will allow us to [mention the positive outcome, e.g., move forward with the client proposal on time].\n\nCould you please provide [the requested item] by [Date/Day]?\n\nIf you need any additional context or have questions, I am happy to hop on a quick call. Thank you for your time and support.\n\nBest regards,\n\n[Your Name] [Your Title]\n\n[Your Company]\n\n[Your Contact Information]",
+        "displayName": "123#first_template",
+        "environments": "[\"Default Environment\"]"
+    }
+]
