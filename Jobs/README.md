@@ -311,6 +311,19 @@ Token renewal job should be used to periodically update the refresh token config
 |Connector Names|String|False|ds|
 
 
+Readme text## projects/spsstg-ck6l5/locations/us/instances/96356bda-a057-49d1-9692-34b4b2c9c3f6/integrations/AzureSecurityCenter/jobs/84/jobInstances/66
+Token renewal job should be used to periodically update the refresh token configured for the integration. By default, the refresh token expires every 90 days, making integration unusable upon expiration. It is recommended to run this job every 7 or 14 days to make sure that refresh token will be up to date.
+
+
+**Run Interval In Seconds:** None
+
+#### Parameters
+|Name|Type|Is Mandatory|Value|
+|----|----|------------|-----|
+|Integration Environments|String|False||
+|Connector Names|String|False||
+
+
 Readme text## projects/spsstg-ck6l5/locations/us/instances/96356bda-a057-49d1-9692-34b4b2c9c3f6/integrations/MicrosoftGraphMailDelegated/jobs/96/jobInstances/49
 Token renewal job should be used to periodically update the refresh token configured for the integration. By default, the refresh token expires every 90 days, making integration unusable upon expiration. It is recommended to run this job every 7 or 14 days to make sure that refresh token will be up to date.
 
@@ -376,6 +389,48 @@ This job will synchronize Google SecOps Alerts and SentinelOne alerts. The job s
 |Max Hours Backwards|Int|False|24|
 |Verify SSL|Boolean|False|true|
 |API Token|Password|False|*****|
+
+
+Readme text## projects/spsstg-ck6l5/locations/us/instances/96356bda-a057-49d1-9692-34b4b2c9c3f6/integrations/Microsoft365Defender/jobs/93/jobInstances/65
+This job synchronizes Google SecOps Alerts and Microsoft Defender XDR Alerts. It ensures that comments and status are synchronized bi-directionally between both systems. Note: Assignee synchronization occurs exclusively from Microsoft Defender to Google SecOps. For the job to identify the correct information, the Google SecOps case must have the "Microsoft Defender XDR Alert" tag. If the alert didn’t originate from "Microsoft 365 Defender - Incidents Connector",  you will need to add an "Alert_ID" context value to the alert for the job to be able to find the correct information.
+
+
+**Run Interval In Seconds:** None
+
+#### Parameters
+|Name|Type|Is Mandatory|Value|
+|----|----|------------|-----|
+|Environment Name|String|False|Default Environment|
+|Login API Root|String|False|https://login.microsoftonline.com|
+|Graph API Root|String|False|https://graph.microsoft.com|
+|API Root|String|False|https://api.security.microsoft.com|
+|Tenant ID|String|False|fds|
+|Client ID|String|False|gfd|
+|Max Hours Backwards|Int|False|24|
+|Sync Assignee|Boolean|False|false|
+|Verify SSL|Boolean|False|true|
+|Client Secret|Password|False|*****|
+
+
+Readme text## projects/spsstg-ck6l5/locations/us/instances/96356bda-a057-49d1-9692-34b4b2c9c3f6/integrations/Microsoft365Defender/jobs/93/jobInstances/64
+This job synchronizes Google SecOps Alerts and Microsoft Defender XDR Alerts. It ensures that comments and status are synchronized bi-directionally between both systems. Note: Assignee synchronization occurs exclusively from Microsoft Defender to Google SecOps. For the job to identify the correct information, the Google SecOps case must have the "Microsoft Defender XDR Alert" tag. If the alert didn’t originate from "Microsoft 365 Defender - Incidents Connector",  you will need to add an "Alert_ID" context value to the alert for the job to be able to find the correct information.
+
+
+**Run Interval In Seconds:** None
+
+#### Parameters
+|Name|Type|Is Mandatory|Value|
+|----|----|------------|-----|
+|Environment Name|String|False|Default Environment|
+|Login API Root|String|False|https://login.microsoftonline.com|
+|Graph API Root|String|False|https://graph.microsoft.com|
+|API Root|String|False|https://api.security.microsoft.com|
+|Tenant ID|String|False|dfghj|
+|Client ID|String|False|dfghj|
+|Max Hours Backwards|Int|False|24|
+|Sync Assignee|Boolean|False|false|
+|Verify SSL|Boolean|False|true|
+|Client Secret|Password|False|*****|
 
 
 Readme text## projects/spsstg-ck6l5/locations/us/instances/96356bda-a057-49d1-9692-34b4b2c9c3f6/integrations/CrowdStrikeFalcon/jobs/88/jobInstances/37
