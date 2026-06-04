@@ -1,4 +1,4 @@
-## projects/spsstg-ck6l5/locations/us/instances/96356bda-a057-49d1-9692-34b4b2c9c3f6/integrations/ServiceNow/jobs/103/jobInstances/45
+## 10000Sync Closed Incidents
 This job will synchronize closed ServiceNow incidents and Google SecOps alerts. This job works with ServiceNow incidents that were ingested as alerts and also cases, which contains tag “ServiceNow” and “TICKET_ID” context value with Incident Number inside of it.
 
 
@@ -19,7 +19,7 @@ This job will synchronize closed ServiceNow incidents and Google SecOps alerts. 
 |Refresh Token|Password|False|*****|
 
 
-Readme text## projects/spsstg-ck6l5/locations/us/instances/96356bda-a057-49d1-9692-34b4b2c9c3f6/integrations/ServiceNow/jobs/103/jobInstances/44
+Readme text## 1010Sync Closed Incidents
 This job will synchronize closed ServiceNow incidents and Google SecOps alerts. This job works with ServiceNow incidents that were ingested as alerts and also cases, which contains tag “ServiceNow” and “TICKET_ID” context value with Incident Number inside of it.
 
 
@@ -40,7 +40,7 @@ This job will synchronize closed ServiceNow incidents and Google SecOps alerts. 
 |Refresh Token|Password|False|*****|
 
 
-Readme text## projects/spsstg-ck6l5/locations/us/instances/96356bda-a057-49d1-9692-34b4b2c9c3f6/integrations/CaseFederation/jobs/42/jobInstances/43
+Readme text## 101Case Federation Sync Job
 This job will sync case metadata to an external platform for central management.
 
 
@@ -53,7 +53,7 @@ This job will sync case metadata to an external platform for central management.
 |API Key|Password|False|*****|
 
 
-Readme text## projects/spsstg-ck6l5/locations/us/instances/96356bda-a057-49d1-9692-34b4b2c9c3f6/integrations/PaloAltoCortexXDR/jobs/98/jobInstances/47
+Readme text## 1234567Sync Incidents
 This job synchronizes Google SecOps Alerts and Palo Alto XDR Incidents. It ensures that comments and status are kept in sync between the two systems. For the job to identify the correct information, the Google SecOps case must have the "Palo Alto XDR Incident" tag. If the alert didn’t originate from "Palo Alto Cortex XDR Connector",  you will need to add an "Incident_ID" context value to the case for the job to be able to find the correct information.
 
 
@@ -71,7 +71,7 @@ This job synchronizes Google SecOps Alerts and Palo Alto XDR Incidents. It ensur
 |Api Key|Password|False|*****|
 
 
-Readme text## projects/spsstg-ck6l5/locations/us/instances/96356bda-a057-49d1-9692-34b4b2c9c3f6/integrations/Tools/jobs/105/jobInstances/46
+Readme text## 1234Close Cases Based On Search
 This job will close all cases based on a search query.  The Search Payload is the payload used in the 'CaseSearchEverything' API call.  To get an example of this value, go to Search in the UI and open Developer Tools.  Search for the cases to delete.  Look for the "CaseSearchEverything" api call in DevTools.  Copy the JSON payload of the POST request and paste in "Search Payload".  The Close Reason should be 0 or 1.   0 = malicious 1  = not malicious.  Root Cause comes from Settings -> Case Data -> Case Close Root Cause
 
 
@@ -86,7 +86,7 @@ This job will close all cases based on a search query.  The Search Payload is th
 |Root Cause|String|False|not_malicious|
 
 
-Readme text## projects/spsstg-ck6l5/locations/us/instances/96356bda-a057-49d1-9692-34b4b2c9c3f6/integrations/MicrosoftTeams/jobs/97/jobInstances/48
+Readme text## 2345678Refresh Token Renewal Job
 Token renewal job should be used to periodically update the refresh token configured for the integration. By default, the refresh token expires every 90 days, making integration unusable upon expiration. It is recommended to run this job every 7 or 14 days to make sure that refresh token will be up to date.
 
 
@@ -98,7 +98,7 @@ Token renewal job should be used to periodically update the refresh token config
 |Integration Environments|String|False||
 
 
-Readme text## projects/spsstg-ck6l5/locations/us/instances/96356bda-a057-49d1-9692-34b4b2c9c3f6/integrations/CrowdStrikeFalcon/jobs/88/jobInstances/50
+Readme text## 234567Sync Alerts
 This job will synchronize Google SecOps Alerts and Crowdstrike alerts. The job synchronizes comments and status. Requires “Crowdstrike Alert” tag on the case. Note: If the alert didn’t originate from “Alerts Connector” or “Identity Protections Detection Connector” you will need to add an “Alert_ID” context value for the job to be able to find the correct information.
 
 
@@ -115,7 +115,7 @@ This job will synchronize Google SecOps Alerts and Crowdstrike alerts. The job s
 |Client Secret|Password|False|*****|
 
 
-Readme text## projects/spsstg-ck6l5/locations/us/instances/96356bda-a057-49d1-9692-34b4b2c9c3f6/integrations/CaServiceDesk/jobs/87/jobInstances/62
+Readme text## 23456CA Close Ticket In CA For Closed Case
 Sync closure of the tickets at the CA Desk Manager with Siemplify cases closure.
 
 
@@ -133,7 +133,7 @@ Sync closure of the tickets at the CA Desk Manager with Siemplify cases closure.
 |Script Name|String|False|TEST CLOSE|
 
 
-Readme text## projects/spsstg-ck6l5/locations/us/instances/96356bda-a057-49d1-9692-34b4b2c9c3f6/integrations/CaServiceDesk/jobs/87/jobInstances/23
+Readme text## CA Close Ticket In CA For Closed Case
 Sync closure of the tickets at the CA Desk Manager with Siemplify cases closure.
 
 
@@ -151,7 +151,7 @@ Sync closure of the tickets at the CA Desk Manager with Siemplify cases closure.
 |Script Name|String|False|TEST CLOSE|
 
 
-Readme text## projects/spsstg-ck6l5/locations/us/instances/96356bda-a057-49d1-9692-34b4b2c9c3f6/integrations/CaseFederation/jobs/42/jobInstances/24
+Readme text## Case Federation Sync Job
 This job will sync case metadata to an external platform for central management.
 
 
@@ -164,7 +164,7 @@ This job will sync case metadata to an external platform for central management.
 |API Key|Password|False|*****|
 
 
-Readme text## projects/spsstg-ck6l5/locations/us/instances/96356bda-a057-49d1-9692-34b4b2c9c3f6/integrations/CaseFederation/jobs/42/jobInstances/51
+Readme text## Case Federation Sync Job234567
 This job will sync case metadata to an external platform for central management.
 
 
@@ -177,7 +177,7 @@ This job will sync case metadata to an external platform for central management.
 |API Key|Password|False|*****|
 
 
-Readme text## projects/spsstg-ck6l5/locations/us/instances/96356bda-a057-49d1-9692-34b4b2c9c3f6/integrations/CaseFederation/jobs/42/jobInstances/58
+Readme text## Case Federation Sync Job2345678
 This job will sync case metadata to an external platform for central management.
 
 
@@ -190,7 +190,7 @@ This job will sync case metadata to an external platform for central management.
 |API Key|Password|False|*****|
 
 
-Readme text## projects/spsstg-ck6l5/locations/us/instances/96356bda-a057-49d1-9692-34b4b2c9c3f6/integrations/CaseFederation/jobs/42/jobInstances/36
+Readme text## Case Federation Sync Job4567890
 This job will sync case metadata to an external platform for central management.
 
 
@@ -203,7 +203,7 @@ This job will sync case metadata to an external platform for central management.
 |API Key|Password|False|*****|
 
 
-Readme text## projects/spsstg-ck6l5/locations/us/instances/96356bda-a057-49d1-9692-34b4b2c9c3f6/integrations/Siemplify/jobs/110/jobInstances/42
+Readme text## Cases Collector DB8765432
 Collect cases and connector logs from Publisher.
 
 
@@ -216,7 +216,7 @@ Collect cases and connector logs from Publisher.
 |Verify SSL|Boolean|False|false|
 
 
-Readme text## projects/spsstg-ck6l5/locations/us/instances/96356bda-a057-49d1-9692-34b4b2c9c3f6/integrations/Tools/jobs/105/jobInstances/12
+Readme text## Close Cases Based On Search
 This job will close all cases based on a search query.  The Search Payload is the payload used in the 'CaseSearchEverything' API call.  To get an example of this value, go to Search in the UI and open Developer Tools.  Search for the cases to delete.  Look for the "CaseSearchEverything" api call in DevTools.  Copy the JSON payload of the POST request and paste in "Search Payload".  The Close Reason should be 0 or 1.   0 = malicious 1  = not malicious.  Root Cause comes from Settings -> Case Data -> Case Close Root Cause
 
 
@@ -231,7 +231,7 @@ This job will close all cases based on a search query.  The Search Payload is th
 |Root Cause|String|False|Malicious|
 
 
-Readme text## projects/spsstg-ck6l5/locations/us/instances/96356bda-a057-49d1-9692-34b4b2c9c3f6/integrations/Exchange/jobs/90/jobInstances/22
+Readme text## Oauth Token Expiry Notification Job
 Note that the job is deprecated and will be removed in the next 6 months. Oauth Token Expiry Notification Job is recommended to use if integration is working with Oauth refresh tokens. Refresh tokens are valid only for 90 days, after that User will need to create a new refresh token to use in the integration. This job will send reminder emails to the configured recipient list when the token will expire in 10, 5 and 1 day. Once a new token is set in this job, the notification timer will start over.
 
 
@@ -249,7 +249,7 @@ Note that the job is deprecated and will be removed in the next 6 months. Oauth 
 |Refresh Token|Password|False|*****|
 
 
-Readme text## projects/spsstg-ck6l5/locations/us/instances/96356bda-a057-49d1-9692-34b4b2c9c3f6/integrations/MicrosoftTeams/jobs/97/jobInstances/17
+Readme text## Refresh Token Renewal Job
 Token renewal job should be used to periodically update the refresh token configured for the integration. By default, the refresh token expires every 90 days, making integration unusable upon expiration. It is recommended to run this job every 7 or 14 days to make sure that refresh token will be up to date.
 
 
@@ -261,7 +261,7 @@ Token renewal job should be used to periodically update the refresh token config
 |Integration Environments|String|False||
 
 
-Readme text## projects/spsstg-ck6l5/locations/us/instances/96356bda-a057-49d1-9692-34b4b2c9c3f6/integrations/AzureApi/jobs/83/jobInstances/20
+Readme text## Refresh Token Renewal Job1
 Token renewal job should be used to periodically update the refresh token configured for the integration. By default, the refresh token expires every 90 days, making integration unusable upon expiration. It is recommended to run this job every 7 or 14 days to make sure that refresh token will be up to date.
 
 
@@ -273,7 +273,7 @@ Token renewal job should be used to periodically update the refresh token config
 |Integration Environments|String|False||
 
 
-Readme text## projects/spsstg-ck6l5/locations/us/instances/96356bda-a057-49d1-9692-34b4b2c9c3f6/integrations/MicrosoftTeams/jobs/97/jobInstances/59
+Readme text## Refresh Token Renewal Job1234556789
 Token renewal job should be used to periodically update the refresh token configured for the integration. By default, the refresh token expires every 90 days, making integration unusable upon expiration. It is recommended to run this job every 7 or 14 days to make sure that refresh token will be up to date.
 
 
@@ -285,7 +285,7 @@ Token renewal job should be used to periodically update the refresh token config
 |Integration Environments|String|False||
 
 
-Readme text## projects/spsstg-ck6l5/locations/us/instances/96356bda-a057-49d1-9692-34b4b2c9c3f6/integrations/AzureSecurityCenter/jobs/84/jobInstances/61
+Readme text## Refresh Token Renewal Job2345678
 Token renewal job should be used to periodically update the refresh token configured for the integration. By default, the refresh token expires every 90 days, making integration unusable upon expiration. It is recommended to run this job every 7 or 14 days to make sure that refresh token will be up to date.
 
 
@@ -298,7 +298,7 @@ Token renewal job should be used to periodically update the refresh token config
 |Connector Names|String|False||
 
 
-Readme text## projects/spsstg-ck6l5/locations/us/instances/96356bda-a057-49d1-9692-34b4b2c9c3f6/integrations/MicrosoftGraphMailDelegated/jobs/96/jobInstances/40
+Readme text## Refresh Token Renewal Job23456789
 Token renewal job should be used to periodically update the refresh token configured for the integration. By default, the refresh token expires every 90 days, making integration unusable upon expiration. It is recommended to run this job every 7 or 14 days to make sure that refresh token will be up to date.
 
 
@@ -311,7 +311,7 @@ Token renewal job should be used to periodically update the refresh token config
 |Connector Names|String|False|ds|
 
 
-Readme text## projects/spsstg-ck6l5/locations/us/instances/96356bda-a057-49d1-9692-34b4b2c9c3f6/integrations/AzureSecurityCenter/jobs/84/jobInstances/66
+Readme text## Refresh Token Renewal Job23466543
 Token renewal job should be used to periodically update the refresh token configured for the integration. By default, the refresh token expires every 90 days, making integration unusable upon expiration. It is recommended to run this job every 7 or 14 days to make sure that refresh token will be up to date.
 
 
@@ -324,7 +324,7 @@ Token renewal job should be used to periodically update the refresh token config
 |Connector Names|String|False||
 
 
-Readme text## projects/spsstg-ck6l5/locations/us/instances/96356bda-a057-49d1-9692-34b4b2c9c3f6/integrations/MicrosoftGraphMailDelegated/jobs/96/jobInstances/49
+Readme text## Refresh Token Renewal Job345678
 Token renewal job should be used to periodically update the refresh token configured for the integration. By default, the refresh token expires every 90 days, making integration unusable upon expiration. It is recommended to run this job every 7 or 14 days to make sure that refresh token will be up to date.
 
 
@@ -337,7 +337,7 @@ Token renewal job should be used to periodically update the refresh token config
 |Connector Names|String|False||
 
 
-Readme text## projects/spsstg-ck6l5/locations/us/instances/96356bda-a057-49d1-9692-34b4b2c9c3f6/integrations/Microsoft365Defender/jobs/93/jobInstances/19
+Readme text## Sync Alerts
 This job synchronizes Google SecOps Alerts and Microsoft Defender XDR Alerts. It ensures that comments and status are synchronized bi-directionally between both systems. Note: Assignee synchronization occurs exclusively from Microsoft Defender to Google SecOps. For the job to identify the correct information, the Google SecOps case must have the "Microsoft Defender XDR Alert" tag. If the alert didn’t originate from "Microsoft 365 Defender - Incidents Connector",  you will need to add an "Alert_ID" context value to the alert for the job to be able to find the correct information.
 
 
@@ -358,7 +358,7 @@ This job synchronizes Google SecOps Alerts and Microsoft Defender XDR Alerts. It
 |Client Secret|Password|False|*****|
 
 
-Readme text## projects/spsstg-ck6l5/locations/us/instances/96356bda-a057-49d1-9692-34b4b2c9c3f6/integrations/CrowdStrikeFalcon/jobs/88/jobInstances/27
+Readme text## Sync Alerts2
 This job will synchronize Google SecOps Alerts and Crowdstrike alerts. The job synchronizes comments and status. Requires “Crowdstrike Alert” tag on the case. Note: If the alert didn’t originate from “Alerts Connector” or “Identity Protections Detection Connector” you will need to add an “Alert_ID” context value for the job to be able to find the correct information.
 
 
@@ -375,7 +375,7 @@ This job will synchronize Google SecOps Alerts and Crowdstrike alerts. The job s
 |Client Secret|Password|False|*****|
 
 
-Readme text## projects/spsstg-ck6l5/locations/us/instances/96356bda-a057-49d1-9692-34b4b2c9c3f6/integrations/SentinelOneV2/jobs/99/jobInstances/52
+Readme text## Sync Alerts234567
 This job will synchronize Google SecOps Alerts and SentinelOne alerts. The job synchronizes status. Requires “SentinelOne Alert” tag on the case. Note: If the alert didn’t originate from “Alerts Connector” you will need to add an “Alert_ID” Alert Context Value for the job to be able to find the correct information.
 
 
@@ -391,7 +391,7 @@ This job will synchronize Google SecOps Alerts and SentinelOne alerts. The job s
 |API Token|Password|False|*****|
 
 
-Readme text## projects/spsstg-ck6l5/locations/us/instances/96356bda-a057-49d1-9692-34b4b2c9c3f6/integrations/Microsoft365Defender/jobs/93/jobInstances/65
+Readme text## Sync Alerts2345678
 This job synchronizes Google SecOps Alerts and Microsoft Defender XDR Alerts. It ensures that comments and status are synchronized bi-directionally between both systems. Note: Assignee synchronization occurs exclusively from Microsoft Defender to Google SecOps. For the job to identify the correct information, the Google SecOps case must have the "Microsoft Defender XDR Alert" tag. If the alert didn’t originate from "Microsoft 365 Defender - Incidents Connector",  you will need to add an "Alert_ID" context value to the alert for the job to be able to find the correct information.
 
 
@@ -412,7 +412,7 @@ This job synchronizes Google SecOps Alerts and Microsoft Defender XDR Alerts. It
 |Client Secret|Password|False|*****|
 
 
-Readme text## projects/spsstg-ck6l5/locations/us/instances/96356bda-a057-49d1-9692-34b4b2c9c3f6/integrations/Microsoft365Defender/jobs/93/jobInstances/64
+Readme text## Sync Alerts2345678765
 This job synchronizes Google SecOps Alerts and Microsoft Defender XDR Alerts. It ensures that comments and status are synchronized bi-directionally between both systems. Note: Assignee synchronization occurs exclusively from Microsoft Defender to Google SecOps. For the job to identify the correct information, the Google SecOps case must have the "Microsoft Defender XDR Alert" tag. If the alert didn’t originate from "Microsoft 365 Defender - Incidents Connector",  you will need to add an "Alert_ID" context value to the alert for the job to be able to find the correct information.
 
 
@@ -433,7 +433,7 @@ This job synchronizes Google SecOps Alerts and Microsoft Defender XDR Alerts. It
 |Client Secret|Password|False|*****|
 
 
-Readme text## projects/spsstg-ck6l5/locations/us/instances/96356bda-a057-49d1-9692-34b4b2c9c3f6/integrations/CrowdStrikeFalcon/jobs/88/jobInstances/37
+Readme text## Sync Alerts34567
 This job will synchronize Google SecOps Alerts and Crowdstrike alerts. The job synchronizes comments and status. Requires “Crowdstrike Alert” tag on the case. Note: If the alert didn’t originate from “Alerts Connector” or “Identity Protections Detection Connector” you will need to add an “Alert_ID” context value for the job to be able to find the correct information.
 
 
@@ -450,7 +450,7 @@ This job will synchronize Google SecOps Alerts and Crowdstrike alerts. The job s
 |Client Secret|Password|False|*****|
 
 
-Readme text## projects/spsstg-ck6l5/locations/us/instances/96356bda-a057-49d1-9692-34b4b2c9c3f6/integrations/BMCRemedyITSM/jobs/85/jobInstances/25
+Readme text## Sync Closed Incidents By Tag
 This job will synchronize BMC Remedy ITSM incidents that were created within Siemplify Case playbook and Siemplify cases. Note: in BMC Remedy ITSM statuses "Cancelled", "Closed" and "Resolved" are treated as closed. Additionally, in order for the job to work, it's required for the case to have 2 tags. First tag should be "BMC Remedy ITSM" and the second should be with the prefix "BMC Remedy ITSM:{Incident ID}". Job can only close incidents that are assigned in BMC Remedy ITSM.
 
 
@@ -468,7 +468,7 @@ This job will synchronize BMC Remedy ITSM incidents that were created within Sie
 |Password|Password|False|*****|
 
 
-Readme text## projects/spsstg-ck6l5/locations/us/instances/96356bda-a057-49d1-9692-34b4b2c9c3f6/integrations/ServiceNow/jobs/103/jobInstances/15
+Readme text## Sync Closed Incidents
 This job will synchronize closed ServiceNow incidents and Google SecOps alerts. This job works with ServiceNow incidents that were ingested as alerts and also cases, which contains tag “ServiceNow” and “TICKET_ID” context value with Incident Number inside of it.
 
 
@@ -489,7 +489,7 @@ This job will synchronize closed ServiceNow incidents and Google SecOps alerts. 
 |Refresh Token|Password|False|*****|
 
 
-Readme text## projects/spsstg-ck6l5/locations/us/instances/96356bda-a057-49d1-9692-34b4b2c9c3f6/integrations/ServiceDeskPlusV3/jobs/115/jobInstances/30
+Readme text## Sync Closed Requests By Tag
 This job will synchronize ServiceDeskPlus requests that were created within Siemplify Case playbook and Siemplify cases. Note: in ServiceDeskPlus statuses "Cancelled", "Closed" and "Resolved" are treated as closed. Additionally, in order for the job to work, it’s required for the case to have 2 tags. First tag should be "ServiceDeskPlus" and the second should be with the prefix "ServiceDeskPlus Requests:{request id}".
 
 
@@ -504,7 +504,7 @@ This job will synchronize ServiceDeskPlus requests that were created within Siem
 |Api Key|Password|False|*****|
 
 
-Readme text## projects/spsstg-ck6l5/locations/us/instances/96356bda-a057-49d1-9692-34b4b2c9c3f6/integrations/ServiceDeskPlusV3/jobs/115/jobInstances/55
+Readme text## Sync Closed Requests By Tag34567
 This job will synchronize ServiceDeskPlus requests that were created within Siemplify Case playbook and Siemplify cases. Note: in ServiceDeskPlus statuses "Cancelled", "Closed" and "Resolved" are treated as closed. Additionally, in order for the job to work, it’s required for the case to have 2 tags. First tag should be "ServiceDeskPlus" and the second should be with the prefix "ServiceDeskPlus Requests:{request id}".
 
 
@@ -519,7 +519,7 @@ This job will synchronize ServiceDeskPlus requests that were created within Siem
 |Api Key|Password|False|*****|
 
 
-Readme text## projects/spsstg-ck6l5/locations/us/instances/96356bda-a057-49d1-9692-34b4b2c9c3f6/integrations/ServiceDeskPlusV3/jobs/115/jobInstances/63
+Readme text## Sync Closed Requests By Tag345678
 This job will synchronize ServiceDeskPlus requests that were created within Siemplify Case playbook and Siemplify cases. Note: in ServiceDeskPlus statuses "Cancelled", "Closed" and "Resolved" are treated as closed. Additionally, in order for the job to work, it’s required for the case to have 2 tags. First tag should be "ServiceDeskPlus" and the second should be with the prefix "ServiceDeskPlus Requests:{request id}".
 
 
@@ -534,7 +534,7 @@ This job will synchronize ServiceDeskPlus requests that were created within Siem
 |Api Key|Password|False|*****|
 
 
-Readme text## projects/spsstg-ck6l5/locations/us/instances/96356bda-a057-49d1-9692-34b4b2c9c3f6/integrations/ServiceDeskPlusV3/jobs/115/jobInstances/34
+Readme text## Sync Closed Requests By Tag56789
 This job will synchronize ServiceDeskPlus requests that were created within Siemplify Case playbook and Siemplify cases. Note: in ServiceDeskPlus statuses "Cancelled", "Closed" and "Resolved" are treated as closed. Additionally, in order for the job to work, it’s required for the case to have 2 tags. First tag should be "ServiceDeskPlus" and the second should be with the prefix "ServiceDeskPlus Requests:{request id}".
 
 
@@ -549,7 +549,7 @@ This job will synchronize ServiceDeskPlus requests that were created within Siem
 |Api Key|Password|False|*****|
 
 
-Readme text## projects/spsstg-ck6l5/locations/us/instances/96356bda-a057-49d1-9692-34b4b2c9c3f6/integrations/CaServiceDesk/jobs/86/jobInstances/28
+Readme text## Sync Comments56
 Sync comments from CA Desk Manager to Siemplify.
 
 
@@ -570,7 +570,7 @@ Sync comments from CA Desk Manager to Siemplify.
 |Password|Password|False|*****|
 
 
-Readme text## projects/spsstg-ck6l5/locations/us/instances/96356bda-a057-49d1-9692-34b4b2c9c3f6/integrations/SOCRadar/jobs/116/jobInstances/31
+Readme text## Sync IOC Feeds
 Scheduled job that fetches IOCs from configured SOCRadar Threat Feed collections and writes them to Chronicle SIEM reference lists. Creates one list per IOC type (ip, domain, hash, url). Run daily to keep threat intelligence feeds current.
 
 
@@ -589,7 +589,7 @@ Scheduled job that fetches IOCs from configured SOCRadar Threat Feed collections
 |Verify SSL|Boolean|False|true|
 
 
-Readme text## projects/spsstg-ck6l5/locations/us/instances/96356bda-a057-49d1-9692-34b4b2c9c3f6/integrations/SOCRadar/jobs/116/jobInstances/39
+Readme text## Sync IOC Feeds109
 Scheduled job that fetches IOCs from configured SOCRadar Threat Feed collections and writes them to Chronicle SIEM reference lists. Creates one list per IOC type (ip, domain, hash, url). Run daily to keep threat intelligence feeds current.
 
 
@@ -608,7 +608,7 @@ Scheduled job that fetches IOCs from configured SOCRadar Threat Feed collections
 |API Key|Password|False|*****|
 
 
-Readme text## projects/spsstg-ck6l5/locations/us/instances/96356bda-a057-49d1-9692-34b4b2c9c3f6/integrations/SOCRadar/jobs/116/jobInstances/38
+Readme text## Sync IOC Feeds345678
 Scheduled job that fetches IOCs from configured SOCRadar Threat Feed collections and writes them to Chronicle SIEM reference lists. Creates one list per IOC type (ip, domain, hash, url). Run daily to keep threat intelligence feeds current.
 
 
@@ -627,7 +627,7 @@ Scheduled job that fetches IOCs from configured SOCRadar Threat Feed collections
 |API Key|Password|False|*****|
 
 
-Readme text## projects/spsstg-ck6l5/locations/us/instances/96356bda-a057-49d1-9692-34b4b2c9c3f6/integrations/ServiceNow/jobs/104/jobInstances/7
+Readme text## Sync Incidents Job
 This job will synchronize incidents fields and attachments that are related to case/alerts in ServiceNow. For the job to work, you need to have the "ServiceNow Incident Sync" tag added to the case and "TICKET_ID" context value added to either Case or Alert depending on the parameter "Sync Level". Example of the "TICKET_ID": "INC0000050,INC0000051".
 
 
@@ -644,7 +644,7 @@ This job will synchronize incidents fields and attachments that are related to c
 |Password|Password|False|*****|
 
 
-Readme text## projects/spsstg-ck6l5/locations/us/instances/96356bda-a057-49d1-9692-34b4b2c9c3f6/integrations/MicrosoftAzureSentinel/jobs/94/jobInstances/54
+Readme text## Sync Incidents V234567
 Use the Sync Incidents V2 job to synchronize Google SecOps alerts with Microsoft Sentinel incidents. This job ensures that comments, statuses, and tags are synchronized bi-directionally between both systems. Note: Assignee and severity synchronization occurs exclusively from Microsoft Sentinel to Google SecOps. For the job to identify the correct information, the Google SecOps case must have the Microsoft Sentinel Incident tag. This job only works on alerts from the Microsoft Azure Sentinel Incident Connector v2.
 
 
@@ -667,7 +667,7 @@ Use the Sync Incidents V2 job to synchronize Google SecOps alerts with Microsoft
 |Client Secret|Password|False|*****|
 
 
-Readme text## projects/spsstg-ck6l5/locations/us/instances/96356bda-a057-49d1-9692-34b4b2c9c3f6/integrations/PaloAltoCortexXDR/jobs/98/jobInstances/26
+Readme text## Sync Incidents234
 This job synchronizes Google SecOps Alerts and Palo Alto XDR Incidents. It ensures that comments and status are kept in sync between the two systems. For the job to identify the correct information, the Google SecOps case must have the "Palo Alto XDR Incident" tag. If the alert didn’t originate from "Palo Alto Cortex XDR Connector",  you will need to add an "Incident_ID" context value to the case for the job to be able to find the correct information.
 
 
@@ -685,7 +685,7 @@ This job synchronizes Google SecOps Alerts and Palo Alto XDR Incidents. It ensur
 |Api Key|Password|False|*****|
 
 
-Readme text## projects/spsstg-ck6l5/locations/us/instances/96356bda-a057-49d1-9692-34b4b2c9c3f6/integrations/PaloAltoCortexXDR/jobs/98/jobInstances/57
+Readme text## Sync Incidents34567
 This job synchronizes Google SecOps Alerts and Palo Alto XDR Incidents. It ensures that comments and status are kept in sync between the two systems. For the job to identify the correct information, the Google SecOps case must have the "Palo Alto XDR Incident" tag. If the alert didn’t originate from "Palo Alto Cortex XDR Connector",  you will need to add an "Incident_ID" context value to the case for the job to be able to find the correct information.
 
 
@@ -703,7 +703,7 @@ This job synchronizes Google SecOps Alerts and Palo Alto XDR Incidents. It ensur
 |Api Key|Password|False|*****|
 
 
-Readme text## projects/spsstg-ck6l5/locations/us/instances/96356bda-a057-49d1-9692-34b4b2c9c3f6/integrations/PaloAltoCortexXDR/jobs/98/jobInstances/32
+Readme text## Sync Incidents5778
 This job synchronizes Google SecOps Alerts and Palo Alto XDR Incidents. It ensures that comments and status are kept in sync between the two systems. For the job to identify the correct information, the Google SecOps case must have the "Palo Alto XDR Incident" tag. If the alert didn’t originate from "Palo Alto Cortex XDR Connector",  you will need to add an "Incident_ID" context value to the case for the job to be able to find the correct information.
 
 
@@ -721,7 +721,7 @@ This job synchronizes Google SecOps Alerts and Palo Alto XDR Incidents. It ensur
 |Api Key|Password|False|*****|
 
 
-Readme text## projects/spsstg-ck6l5/locations/us/instances/96356bda-a057-49d1-9692-34b4b2c9c3f6/integrations/ServiceNow/jobs/101/jobInstances/41
+Readme text## Sync Table Record Comments By Tag4567
 This job will synchronize comments in ServiceNow table records and Siemplify cases. Additionally, in order for the job to work, it’s required for the case to have 2 tags. First tag should be "ServiceNow {table name}", for example, "ServiceNow incident" and the second should be with the prefix "ServiceNow TicketId: {TICKET_ID}". Example of the "TICKET_ID": "INC0000050,INC0000051".
 
 
@@ -737,7 +737,7 @@ This job will synchronize comments in ServiceNow table records and Siemplify cas
 |Password|Password|False|*****|
 
 
-Readme text## projects/spsstg-ck6l5/locations/us/instances/96356bda-a057-49d1-9692-34b4b2c9c3f6/integrations/SentinelOneV2/jobs/100/jobInstances/18
+Readme text## Sync Threats 2
 This job will synchronize Google SecOps Alerts and SentinelOne threats. The job synchronizes comments and status. Requires “SentinelOne Threat” tag on the case. Note: If the alert didn’t originate from “Threats Connector” you will need to add an “Threat_ID” Alert Context Value for the job to be able to find the correct information. 
 
 
@@ -753,7 +753,7 @@ This job will synchronize Google SecOps Alerts and SentinelOne threats. The job 
 |API Token|Password|False|*****|
 
 
-Readme text## projects/spsstg-ck6l5/locations/us/instances/96356bda-a057-49d1-9692-34b4b2c9c3f6/integrations/SentinelOneV2/jobs/100/jobInstances/16
+Readme text## Sync Threats
 This job will synchronize Google SecOps Alerts and SentinelOne threats. The job synchronizes comments and status. Requires “SentinelOne Threat” tag on the case. Note: If the alert didn’t originate from “Threats Connector” you will need to add an “Threat_ID” Alert Context Value for the job to be able to find the correct information. 
 
 
@@ -769,7 +769,7 @@ This job will synchronize Google SecOps Alerts and SentinelOne threats. The job 
 |Verify SSL|Boolean|False|true|
 
 
-Readme text## projects/spsstg-ck6l5/locations/us/instances/96356bda-a057-49d1-9692-34b4b2c9c3f6/integrations/SentinelOneV2/jobs/100/jobInstances/56
+Readme text## Sync Threats345678
 This job will synchronize Google SecOps Alerts and SentinelOne threats. The job synchronizes comments and status. Requires “SentinelOne Threat” tag on the case. Note: If the alert didn’t originate from “Threats Connector” you will need to add an “Threat_ID” Alert Context Value for the job to be able to find the correct information. 
 
 
@@ -785,7 +785,7 @@ This job will synchronize Google SecOps Alerts and SentinelOne threats. The job 
 |API Token|Password|False|*****|
 
 
-Readme text## projects/spsstg-ck6l5/locations/us/instances/96356bda-a057-49d1-9692-34b4b2c9c3f6/integrations/Tools/jobs/106/jobInstances/33
+Readme text## Tag Untouched Cases new
 This job will search all open cases, and identify cases that have not been touched in Max Time hours, and apply the tag/tags listed in the tags parameter
 
 
@@ -798,7 +798,7 @@ This job will search all open cases, and identify cases that have not been touch
 |Unmodified Time|Int|False|8|
 
 
-Readme text## projects/spsstg-ck6l5/locations/us/instances/96356bda-a057-49d1-9692-34b4b2c9c3f6/integrations/Tools/jobs/106/jobInstances/11
+Readme text## Tag Untouched Cases
 This job will search all open cases, and identify cases that have not been touched in Max Time hours, and apply the tag/tags listed in the tags parameter
 
 
@@ -811,7 +811,7 @@ This job will search all open cases, and identify cases that have not been touch
 |Unmodified Time|Int|False|8|
 
 
-Readme text## projects/spsstg-ck6l5/locations/us/instances/96356bda-a057-49d1-9692-34b4b2c9c3f6/integrations/Tools/jobs/106/jobInstances/60
+Readme text## Tag Untouched Cases34567
 This job will search all open cases, and identify cases that have not been touched in Max Time hours, and apply the tag/tags listed in the tags parameter
 
 
