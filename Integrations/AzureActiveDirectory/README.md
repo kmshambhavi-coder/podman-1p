@@ -150,13 +150,13 @@ Timeout - 600 Seconds
 
 |Name|Description|IsMandatory|Type|DefaultValue|
 |----|-----------|-----------|----|------------|
+|Max Records To Return|Specify how many records to return. If nothing is provided, action will return 50 records.|False|String|50|
 |User Name|Specify user name to return groups membership for. User name should be specified in username@domain format. Parameter accepts multiple values as a comma separated string.|False|String||
 |Return Only Security Enabled Groups|If enabled, only security groups that the user is a member of will be returned.|False|Boolean|false|
 |Return Detailed Groups Information|If enabled, detailed information on the AD groups will be returned.|False|Boolean|false|
 |Filter Key|Specify the key that needs to be used to filter groups.|False|List|Select One|
 |Filter Logic|Specify what filter logic should be applied. Filtering logic is working based on the value  provided in the "Filter Key" parameter.|False|List|Not Specified|
 |Filter Value|Specify what value should be used in the filter. If "Equal" is selected, action will try to find the exact match among results and if "Contains" is selected, action will try to find results that contain that substring. If nothing is provided in this parameter, the filter will not be applied. Filtering logic is working based on the value  provided in the "Filter Key" parameter.|False|String||
-|Max Records To Return|Specify how many records to return. If nothing is provided, action will return 50 records.|False|String|50|
 
 
 

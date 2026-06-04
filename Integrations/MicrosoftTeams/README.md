@@ -93,11 +93,11 @@ Timeout - 600 Seconds
 
 |Name|Description|IsMandatory|Type|DefaultValue|
 |----|-----------|-----------|----|------------|
+|Text|Specify the content of the message.|True|String||
 |Team Name|Specify the team to which you want to send the reply.|True|String||
 |Channel Name|Specify the channel to which you want to send the reply.|True|String||
 |Message ID|Specify the ID of the message to which you want to send the reply.|True|String||
 |Content Type|Specify the content type for the message.|False|List|Text|
-|Text|Specify the content of the message.|True|String||
 
 
 

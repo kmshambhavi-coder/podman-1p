@@ -132,8 +132,8 @@ Timeout - 600 Seconds
 
 |Name|Description|IsMandatory|Type|DefaultValue|
 |----|-----------|-----------|----|------------|
-|Source IP|Specify source IP that will be used to get traffic.|True|String||
 |Destination IP|Specify destination IP that will be used to get traffic.|True|String||
+|Source IP|Specify source IP that will be used to get traffic.|True|String||
 |Max Hours Backwards|Specify the amount of hours from where to fetch logs.|False|String||
 |Max Logs to Return|Specify how many logs to return. Maximum is 1000.|False|String|50|
 
@@ -173,9 +173,9 @@ Timeout - 600 Seconds
 
 |Name|Description|IsMandatory|Type|DefaultValue|
 |----|-----------|-----------|----|------------|
-|Policy Name|Specify name of the policy.|True|String||
 |Device Name|Specify name of the device. The default device name for Palo Alto Panorama is localhost.localdomain. Visit action documentation to get more insights on where you can find this value.|True|String|localhost.localdomain|
 |Device Group Name|Specify name of the device group. Visit action documentation to get more insights on where you can find this value.|True|String||
+|Policy Name|Specify name of the policy.|True|String||
 
 
 

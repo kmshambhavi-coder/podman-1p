@@ -182,11 +182,11 @@ Timeout - 600 Seconds
 
 |Name|Description|IsMandatory|Type|DefaultValue|
 |----|-----------|-----------|----|------------|
-|Name|The name of the check being performed on the alert.|True|String||
-|Description|The description of the check being performed on the alert.|True|String||
 |Severity|The severity.|True|List|Informational|
 |Category|The category of the check that was performed.|True|String||
 |Source|Optional. The part of the alert that the score was derived from.  Examples are Files, Email, User... |False|String||
+|Name|The name of the check being performed on the alert.|True|String||
+|Description|The description of the check being performed on the alert.|True|String||
 
 
 

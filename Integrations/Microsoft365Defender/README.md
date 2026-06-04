@@ -176,6 +176,8 @@ Pull information about incidents and related alerts from Microsoft 365 Defender.
 
 |Name|Description|IsMandatory|Type|DefaultValue|
 |----|-----------|-----------|----|------------|
+|Use whitelist as a blacklist|If enabled, whitelist will be used as a blacklist.|False|Boolean|false|
+|Alert Service Source Filter|A comma-separated list of service sources of alerts that need to be ingested. Note: this is a case sensitive parameter. Example of the values:antivirus, microsoftDefenderForEndpoint|False|String||
 |Environment Field Name|Describes the name of the field where the environment name is stored. If the environment field isn't found, the environment is the default environment.|False|String||
 |Environment Regex Pattern|A regex pattern to run on the value found in the "Environment Field Name" field. Default is .* to catch all and return the value unchanged. Used to allow the user to manipulate the environment field via regex logic. If the regex pattern is null or empty, or the environment value is null, the final environment result is the default environment.|False|String|.*|
 |Login API Root|Login API root of the Microsoft 365 Defender instance.|True|String|https://login.microsoftonline.com|
@@ -190,8 +192,6 @@ Pull information about incidents and related alerts from Microsoft 365 Defender.
 |Dynamic List Field|Field that can be used in the dynamic list for filtering. Possible values: Incident Name, Alert Name. If nothing is provided, connector will work with the incident name.|False|String|Incident Name|
 |Incident Status Filter|A comma-separated list of incident statuses that need to be ingested. If nothing is provided, the connector will ingest incidents with status “Active” and “In Progress”. Possible values:Active, In Progress, Resolved, Redirected.Note: it’s not recommended to ingest redirected incidents, because in most situations they will be empty.|False|String|Active, In Progress|
 |Alert Detection Source Filter|A comma-separated list of detection sources of alerts that need to be ingested. Note: this is a case sensitive parameter. Example of the values:antivirus, microsoftDefenderForEndpoint|False|String||
-|Alert Service Source Filter|A comma-separated list of service sources of alerts that need to be ingested. Note: this is a case sensitive parameter. Example of the values:antivirus, microsoftDefenderForEndpoint|False|String||
-|Use whitelist as a blacklist|If enabled, whitelist will be used as a blacklist.|False|Boolean|false|
 |Disable Overflow|If enabled, connector will ignore the overflow mechanism.|False|Boolean|true|
 |Lowest Alert Severity To Fetch|Lowest severity that will be used to fetch alerts. Possible values: Informational, Low, Medium, High.|False|String||
 |Disable Alert Tracking|If enabled, the connector will stop tracking updates associated with alerts.|False|Boolean|false|

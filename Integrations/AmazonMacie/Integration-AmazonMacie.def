@@ -10,7 +10,7 @@
             "Id": 0,
             "Mandatory": true,
             "DefaultValue": "",
-            "Description": null,
+            "Description": "",
             "DisplayName": "AWS Access Key ID",
             "PropertyName": "AWS Access Key ID",
             "Type": "String"
@@ -19,7 +19,7 @@
             "Id": 0,
             "Mandatory": true,
             "DefaultValue": null,
-            "Description": null,
+            "Description": "",
             "DisplayName": "AWS Secret Key",
             "PropertyName": "AWS Secret Key",
             "Type": "Password"
@@ -28,7 +28,7 @@
             "Id": 0,
             "Mandatory": true,
             "DefaultValue": "",
-            "Description": null,
+            "Description": "",
             "DisplayName": "AWS Default Region",
             "PropertyName": "AWS Default Region",
             "Type": "String"
@@ -38,7 +38,7 @@
     "ProductionIdentifier": null,
     "Type": "Response",
     "Internal": false,
-    "Version": "10",
+    "Version": "11",
     "DisplayName": "Amazon Macie",
     "Description": "Amazon Macie is a powerful security and compliance service that provides an automatic method to detect, identify, and classify data within your AWS account.",
     "ImageBase64": "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",

@@ -329,6 +329,7 @@ Timeout - 600 Seconds
 
 |Name|Description|IsMandatory|Type|DefaultValue|
 |----|-----------|-----------|----|------------|
+|Only Unread|If selected, the action searches only for unread emails.|False|Boolean|False|
 |Move In Mailbox|The default mailbox to execute the move operation in. If permissions allow it, the action can search in other mailboxes as well. This parameter accepts multiple values as a comma-separated string.|True|String|Default Mailbox|
 |Source Folder Name|A source folder from which to move the email. To specify a subfolder, use the “/” forward slash, such as {Inbox/Subfolder}.|True|String||
 |Destination Folder Name|A destination folder to move the email to. Provide the parameter value in the following format: {Inbox/folder_name/subfolder_name}. This parameter is case-insensitive.|True|String||
@@ -336,7 +337,6 @@ Timeout - 600 Seconds
 |Subject Filter|A filter condition that specifies the email subject to search for. This filter uses the contains logic.|False|String||
 |Sender Filter|A filter condition that specifies the sender of requested emails. This filter uses the equals logic.|False|String||
 |Time Frame (minutes)|A filter condition that specifies the period in minutes to search for emails.|False|String||
-|Only Unread|If selected, the action searches only for unread emails.|False|Boolean|False|
 |How many mailboxes to process in a single batch|The number of mailboxes to process in a single batch (a single connection to the Microsoft 365 server). The default value is 25.|False|String||
 |Limit the Amount of Information Returned in the JSON Result|If enabled, the amount of information returned by the action will be limited only to the key email fields.|False|Boolean|false|
 |Disable the Action JSON Result|If enabled, action will not return JSON result.|False|Boolean|false|

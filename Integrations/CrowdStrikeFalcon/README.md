@@ -134,8 +134,8 @@ Timeout - 600 Seconds
 
 |Name|Description|IsMandatory|Type|DefaultValue|
 |----|-----------|-----------|----|------------|
-|Create Insight|If enabled, action will create insights containing information regarding entities.|False|Boolean|true|
 |Customer ID|Specify the ID of the customer for which you want to execute the action.|False|String||
+|Create Insight|If enabled, action will create insights containing information regarding entities.|False|Boolean|true|
 
 
 
@@ -556,6 +556,7 @@ Pull alerts from Crowdstrike. Dynamic List works with the "display_name" paramet
 
 |Name|Description|IsMandatory|Type|DefaultValue|
 |----|-----------|-----------|----|------------|
+|Use dynamic list as a blocklist|If enabled, the dynamic list will be used as a blocklist.|False|Boolean|false|
 |Environment Field Name|Describes the name of the field where the environment name is stored. If the environment field isn't found, the environment is the default environment.|False|String||
 |Environment Regex Pattern|A regex pattern to run on the value found in the "Environment Field Name" field. Default is .* to catch all and return the value unchanged. Used to allow the user to manipulate the environment field through regex logic. If the regex pattern is null or empty, or the environment value is null, the final environment result is the default environment.|False|String|.*|
 |API Root|API root of the Crowdstrike instance.|True|String|https://api.crowdstrike.com|
@@ -566,7 +567,6 @@ Pull alerts from Crowdstrike. Dynamic List works with the "display_name" paramet
 |Max Alerts To Fetch|How many alerts to process per one connector iteration. Default: 10.|True|Int|10|
 |Include Hidden Alerts|If enabled, connector will also fetch alerts that are labeled as "hidden" by Crowdstrike.|False|Boolean|true|
 |Fallback Severity|Fallback severity for the SecOps alert that should be applied to the Crowdstrike alerts, which are missing severity information. Possible values: Informational, Low, Medium, High, Critical. If nothing is provided, connector will use "Informational" severity.|False|String|Informational|
-|Use dynamic list as a blocklist|If enabled, the dynamic list will be used as a blocklist.|False|Boolean|false|
 |Verify SSL|If enabled, verify the SSL certificate for the connection to the Crowdstrike server is valid.|False|Boolean|false|
 |Disable Overflow|If enabled, connector will ignore the overflow mechanism.|False|Boolean|false|
 |Proxy Server Address|The address of the proxy server to use.|False|String||

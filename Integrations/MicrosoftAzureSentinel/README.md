@@ -390,6 +390,7 @@ Connector works with Microsoft Azure Sentinel incidents and fetches updates to t
 
 |Name|Description|IsMandatory|Type|DefaultValue|
 |----|-----------|-----------|----|------------|
+|Use dynamic list as a blocklist|If enabled, dynamic list will be used as a blocklist.|False|Boolean|false|
 |Environment Field Name|Describes the name of the field where the environment name is stored. If environment field isn't found, environment is "".|False|String||
 |Environment Regex Pattern|A regex pattern to run on the value found in the "Environment Field Name" field. Default is .* to catch all and return value unchanged. Used to allow the user to manipulate the environment field via regex logic. If regex pattern is null or empty, or the environment value is null, the final environment result is "".|False|String|.*|
 |Azure Subscription ID|Microsoft Azure Subscription ID, can be viewed in Azure Portal > Subscriptions > <Your Subscription> > Subscription ID. |True|String||
@@ -407,7 +408,6 @@ Connector works with Microsoft Azure Sentinel incidents and fetches updates to t
 |Max Incidents per Cycle|How many incidents should be processed during one connector run.|True|Int|10|
 |Use the same approach with event creation for all alert types?|By default connector uses a different approach with Scheduled Alert or NRT types of alerts - it tries to fetch events that caused the alert by running the query specified in alert details. Specify whether to change this behavior and use the same approach for the scheduled and NRT alerts as for other alert types.|False|Boolean|false|
 |Incidents Tags To Ingest|Specify a comma separated list of tags Sentinel incident should have to be ingested. Incidents that will not have tags from this list will be ignored. Example of how Sentinel tags can be provided: tag1, tag2|False|String||
-|Use dynamic list as a blocklist|If enabled, dynamic list will be used as a blocklist.|False|Boolean|false|
 |Backlog Expiration Timer|Time frame in minutes for connector to keep incidents in backlog for.|True|Int|60|
 |StartTimeFallback|Specify a comma separated list of incident or alert attributes that should be used as a fallback for the "Start Time" alert field in descending order. Additionally, new "SecOps_Start_Time" attribute will be added to created events. First attribute will have the highest priority, next if its not present or empty in the event - fallback to the next value from the list and so on. If none of the fallback fields are found, connector will use createdTimeUTC, and if that's also non existent - alert ingestion time to SecOps.|True|String|properties_firstActivityTimeGenerated,properties_startTimeUtc,properties_createdTimeUtc,properties_firstAlertTimeGenerated|
 |EndTimeFallback|Specify a comma separated list of incident or alert attributes that should be used as a fallback for the "End Time" alert field in descending order. Additionally, new "SecOps_End_Time" attribute will be added to created events. First attribute will have the highest priority, next if its not present or empty in the event - fallback to the next value from the list and so on. If none of the fallback fields are found, connector will use createdTimeUTC, and if that's also non existent - alert ingestion time to SecOps.|True|String|properties_lastActivityTimeGenerated,properties_endTimeUtc,properties_createdTimeUtc,properties_lastAlertTimeGenerated|
@@ -428,6 +428,7 @@ Connector works with Microsoft Azure Sentinel incidents and fetches updates to t
 |Proxy Password|Proxy server password.|False|Password|*****|
 |Create extra events for all entities|If enabled, when creating entities from the Sentinel API, connector will create extra SecOps events for all Sentinel incident's entities, not only Account, Mailbox, Host or Ip.|False|Boolean|false|
 |Wait For Scheduled/NRT Alert Object|If enabled, the connector will wait until a Scheduled/NRT alert object will be available.|False|Boolean|false|
+|Incident Creation Time Filter (days)|If specified, connector will only fetch incidents that were created within the defined number of days before now.|False|String||
 
 
 #### Microsoft Azure Sentinel Incident Connector
@@ -435,8 +436,6 @@ DEPRECATED! Fetches Incidents from Azure Sentinel.
 
 |Name|Description|IsMandatory|Type|DefaultValue|
 |----|-----------|-----------|----|------------|
-|Verify SSL|Verify SSL certificates for HTTPS requests to Microsoft Azure.|False|Boolean|false|
-|Max Incidents per Cycle|How many incidents should be processed during one connector run|False|Int|10|
 |Environment Field Name|Describes the name of the field where the environment name is stored.|False|String||
 |Environment Regex Pattern|If defined - the connector will implement the specific RegEx pattern on the data from "environment field" to extract specific string. For example - extract domain from sender's address: "(?<=@)(\S+$)"|False|Int||
 |API Root|The API Root of Microsoft Azure Sentinel REST API root.|True|String|https://management.azure.com|
@@ -447,6 +446,8 @@ DEPRECATED! Fetches Incidents from Azure Sentinel.
 |Azure Sentinel Workspace Name|Name of the Azure Sentinel workspace to work with, can be viewed in Azure portal > Azure Sentinel > Azure Sentinel Workspaces.|True|String||
 |Azure Subscription ID|Microsoft Azure Subscription ID, can be viewed in Azure Portal > Subscriptions > <Your Subscription> > Subscription ID. |True|String||
 |Azure Resource Group|Name of Azure Resource Group where Azure Sentinel is located.|True|String||
+|Verify SSL|Verify SSL certificates for HTTPS requests to Microsoft Azure.|False|Boolean|false|
+|Max Incidents per Cycle|How many incidents should be processed during one connector run|False|Int|10|
 |Offset Time In Hours|Number of hours before the first connector iteration to retrieve alerts from. This parameter applies to the initial connector iteration after you enable the connector for the first time, or used as a fallback value in cases where connector's last run timestamp expires. Default value: 24 hours.|False|Int|24|
 |Incident Statuses to Fetch|Specify the statuses of the incidents that should be fetched by the Siemplify server. Comma-separated string.|True|String|Draft, New, InProgress, Closed|
 |Incident Severities to Fetch|Specify the severities of the incidents that should be fetched by the Siemplify server. Comma-separated string.|True|String|Informational, Low, Medium, High, Critical|

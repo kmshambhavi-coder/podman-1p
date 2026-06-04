@@ -171,16 +171,16 @@ Sync comments from CA Desk Manager to Siemplify.
 
 |Name|IsMandatory|Type|DefaultValue|
 |----|-----------|----|------------|
-|Ticket Type Field|False|Boolean||
-|Analyst Type Field|False|Boolean||
-|Time Stamp Field|False|Boolean||
-|Timezone String|False|Boolean|UTC|
 |API Root|True|String|http://x.x.x.x:<port>|
 |Username|True|String||
 |Password|True|Password|*****|
 |Summery Field|True|String|summery.combo_name|
 |Ticket Fields|True|String|summery.combo_name,customer.combo_name,category.sym,status.sym,priority.sym,active,log_agent.combo_name,assignee.combo_name,group.combo_name,affected_service.name,severity.sym,urgency.sym,impact.sym,problem.ref_num,resolution_code.sym,call_back_date,change.chg_ref_num,caused_by_chg.chg_ref_num,external_system_ticket,resolution_method.sym,symptom_code.sym,requested_by.combo_name,persistent_id,summary,description,open_date,last_mod_dt,resolve_date,close_date,ref_num|
 |Script Name|True|String|Test|
+|Ticket Type Field|False|Boolean||
+|Analyst Type Field|False|Boolean||
+|Time Stamp Field|False|Boolean||
+|Timezone String|False|Boolean|UTC|
 
 #### CA Close Ticket In CA For Closed Case
 Sync closure of the tickets at the CA Desk Manager with Siemplify cases closure.

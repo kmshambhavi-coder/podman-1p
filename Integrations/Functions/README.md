@@ -248,9 +248,9 @@ Timeout - 600 Seconds
 
 |Name|Description|IsMandatory|Type|DefaultValue|
 |----|-----------|-----------|----|------------|
-|Function|The function you would like to run on 2 given arguments |True|List|Plus|
 |Arg 2|The second argument |True|String|{}|
 |Arg 1|The first argument|True|String|{}|
+|Function|The function you would like to run on 2 given arguments |True|List|Plus|
 
 
 

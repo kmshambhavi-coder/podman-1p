@@ -174,6 +174,7 @@ Microsoft Graph security Alerts Connector ingests alerts published in Microsoft 
 
 |Name|Description|IsMandatory|Type|DefaultValue|
 |----|-----------|-----------|----|------------|
+|Proxy Password|The proxy password to authenticate with.|False|Password|*****|
 |Environment Field Name|Describes the name of the field where the environment name is stored.|False|String||
 |Environment Regex Pattern|A regex pattern to run on the value found in the Environment Field Name field.|False|String|.*|
 |Client ID|Client (Application) ID that was added for the app registration in Azure Active Directory for this integration.|True|String||
@@ -190,7 +191,6 @@ Microsoft Graph security Alerts Connector ingests alerts published in Microsoft 
 |Max Alerts Per Cycle|How many alerts should be processed during one connector run.|True|Int|50|
 |Proxy Server Address|The address of the proxy server to use.|False|String||
 |Proxy Username|The proxy username to authenticate with.|False|String||
-|Proxy Password|The proxy password to authenticate with.|False|Password|*****|
 
 
 #### Microsoft Graph Office 365 Security and Compliance Connector

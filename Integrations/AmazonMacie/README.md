@@ -7,34 +7,34 @@ Python Version - V3_11
 #### Parameters
 |Name|Description|IsMandatory|Type|DefaultValue|
 |----|-----------|-----------|----|------------|
-|AWS Access Key ID|None|True|String||
-|AWS Secret Key|None|True|Password|*****|
-|AWS Default Region|None|True|String||
+|AWS Access Key ID||True|String||
+|AWS Secret Key||True|Password|*****|
+|AWS Default Region||True|String||
 
 
 #### Dependencies
 | |
 |-|
-|s3transfer-0.10.2-py3-none-any.whl|
-|types_python_dateutil-2.9.0.20240906-py3-none-any.whl|
-|requests-2.32.3-py3-none-any.whl|
-|cryptography-43.0.1-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl|
-|arrow-1.3.0-py3-none-any.whl|
+|six-1.17.0-py2.py3-none-any.whl|
+|pyopenssl-26.2.0-py3-none-any.whl|
+|typing_extensions-4.15.0-py3-none-any.whl|
+|certifi-2026.4.22-py3-none-any.whl|
+|cffi-2.0.0-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl|
+|charset_normalizer-3.4.7-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl|
+|pycparser-3.0-py3-none-any.whl|
 |TIPCommon-1.0.12-py2.py3-none-any.whl|
-|six-1.16.0-py2.py3-none-any.whl|
-|urllib3-2.2.2-py3-none-any.whl|
-|botocore-1.35.17-py3-none-any.whl|
-|cffi-1.17.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl|
-|pycparser-2.22-py3-none-any.whl|
-|jmespath-1.0.1-py3-none-any.whl|
-|idna-3.8-py3-none-any.whl|
-|chardet-5.2.0-py3-none-any.whl|
-|charset_normalizer-3.3.2-py3-none-any.whl|
-|pyOpenSSL-24.2.1-py3-none-any.whl|
-|certifi-2024.8.30-py3-none-any.whl|
+|chardet-7.4.3-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl|
+|idna-3.15-py3-none-any.whl|
+|botocore-1.35.99-py3-none-any.whl|
+|pytz-2026.2-py2.py3-none-any.whl|
+|jmespath-1.1.0-py3-none-any.whl|
+|s3transfer-0.10.4-py3-none-any.whl|
+|urllib3-2.7.0-py3-none-any.whl|
+|requests-2.34.2-py3-none-any.whl|
 |EnvironmentCommon-1.0.1-py2.py3-none-any.whl|
 |boto3-1.35.17-py3-none-any.whl|
 |python_dateutil-2.9.0.post0-py2.py3-none-any.whl|
+|cryptography-48.0.0-cp311-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl|
 
 
 ## Actions

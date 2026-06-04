@@ -114,12 +114,12 @@ Timeout - 600 Seconds
 
 |Name|Description|IsMandatory|Type|DefaultValue|
 |----|-----------|-----------|----|------------|
-|Fang Entities|When enabled, entities that are defanged (example.com => example[.]com) will be converted to fanged entities.|False|Boolean|true|
 |Create Entities|When enabled, this will create User entities out of the To and From headers and a Email Subject entity out of the Subject field. |False|Boolean|true|
 |Exclude Entities Regex|Observed entities that match the supplied regex will not be created.|False|String||
 |Original EML Only|Extract attachments from the original EML only.|False|Boolean|true|
 |Create Observed Entities|Create Entities out of the observed entities in the email body.'All' will create URL, Email, IP, and Hash entities.|False|List|All|
 |Save Attachments to Case Wall|Save the extracted attachments to the case wall.|False|Boolean|true|
+|Fang Entities|When enabled, entities that are defanged (example.com => example[.]com) will be converted to fanged entities.|False|Boolean|true|
 |Custom Entity Regexes|A JSON object that can parse out entities from body and subject.|False|Code|{ }|
 
 

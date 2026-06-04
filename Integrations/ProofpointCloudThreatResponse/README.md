@@ -69,6 +69,7 @@ Pull incidents from Proofpoint Cloud Threat Response. Dynamic List works with th
 
 |Name|Description|IsMandatory|Type|DefaultValue|
 |----|-----------|-----------|----|------------|
+|Proxy Server Address|The address of the proxy server to use.|False|String||
 |Environment Field Name|The name of the field where the environment name is stored. If no value is provided, the connector uses the default environment.|False|String||
 |Environment Regex Pattern|A regular expression pattern to run on the value found in the Environment Field Name field. This parameter lets you manipulate the environment field using the regular expression logic. Use the default value .* to retrieve the required raw Environment Field Name value. If the regular expression pattern is null or empty, or the environment value is null, the final environment result is the default environment.|False|String|.*|
 |API Root|The API Root of the Proofpoint Cloud Threat Response instance.|True|String|https://threatprotection-api.proofpoint.com|
@@ -84,7 +85,6 @@ Pull incidents from Proofpoint Cloud Threat Response. Dynamic List works with th
 |Use dynamic list as a blocklist|If selected, the connector uses the dynamic list as a blocklist.|False|Boolean|false|
 |Disable Overflow|If selected, the connector ignores the Google SecOps overflow mechanism.|False|Boolean|false|
 |Verify SSL|If selected, the integration validates the SSL certificate when connecting to the Proofpoint Cloud Threat Response server.|False|Boolean|false|
-|Proxy Server Address|The address of the proxy server to use.|False|String||
 |Proxy Username|The proxy username to authenticate with.|False|String||
 |Proxy Password|The proxy password to authenticate with.|False|Password|*****|
 

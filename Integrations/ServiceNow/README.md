@@ -310,8 +310,8 @@ Timeout - 600 Seconds
 
 |Name|Description|IsMandatory|Type|DefaultValue|
 |----|-----------|-----------|----|------------|
-|Table Name|Specify name of the table, where you want to search for related records. Example: incident.|True|String||
 |Usernames|Specify a comma-separated list of usernames for which you want to retrieve related records.|True|String||
+|Table Name|Specify name of the table, where you want to search for related records. Example: incident.|True|String||
 |Max Days Backwards|Specify how many days backwards to fetch related records.|True|String|1|
 |Max Records To Return|Specify how many records to return per user. Default: 50|False|String|50|
 
@@ -395,20 +395,32 @@ This job will synchronize comments in ServiceNow table records and Siemplify cas
 |Table Name|True|String||
 |Verify SSL|False|Boolean|true|
 
+#### Sync Incidents Job
+This job will synchronize incidents fields and attachments that are related to case/alerts in ServiceNow. For the job to work, you need to have the "ServiceNow Incident Sync" tag added to the case and "TICKET_ID" context value added to either Case or Alert depending on the parameter "Sync Level". Example of the "TICKET_ID": "INC0000050,INC0000051".
+
+|Name|IsMandatory|Type|DefaultValue|
+|----|-----------|----|------------|
+|API Root|True|String|https://{dev-instance}.service-now.com/api/now/v1/|
+|Username|True|String||
+|Password|True|Password|*****|
+|Sync Level|True|String|Case|
+|Max Hours Backwards|True|Int|24|
+|Verify SSL|False|Boolean|true|
+
 #### Sync Table Record Comments
 This job will synchronize comments in ServiceNow table records and Siemplify cases.
 
 |Name|IsMandatory|Type|DefaultValue|
 |----|-----------|----|------------|
+|Client Secret|False|Password|*****|
+|Refresh Token|False|Password|*****|
+|Use Oauth Authentication|False|Boolean|false|
+|Table Name|True|String||
 |Api Root|True|String|https://{dev-instance}.service-now.com/api/now/v1/|
 |Username|True|String||
 |Password|True|Password|*****|
 |Verify SSL|False|Boolean|true|
 |Client ID|False|String||
-|Client Secret|False|Password|*****|
-|Refresh Token|False|Password|*****|
-|Use Oauth Authentication|False|Boolean|false|
-|Table Name|True|String||
 
 #### Sync Closed Incidents
 This job will synchronize closed ServiceNow incidents and Google SecOps alerts. This job works with ServiceNow incidents that were ingested as alerts and also cases, which contains tag “ServiceNow” and “TICKET_ID” context value with Incident Number inside of it.

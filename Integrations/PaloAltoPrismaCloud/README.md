@@ -74,6 +74,8 @@ Pull alerts from Palo Alto Prisma Cloud. Dynamic List works with the “policy.n
 
 |Name|Description|IsMandatory|Type|DefaultValue|
 |----|-----------|-----------|----|------------|
+|Proxy Server Address|The address of the proxy server to use.|False|String||
+|Proxy Username|The proxy username to authenticate with.|False|String||
 |Environment Field Name|Describes the name of the field where the environment name is stored.If the environment field isn't found, the environment is the default environment.|False|String||
 |Environment Regex Pattern|A regex pattern to run on the value found in the "Environment Field Name" field.Default is .* to catch all and return the value unchanged.Used to allow the user to manipulate the environment field via regex logic.If the regex pattern is null or empty, or the environment value is null, the final environment result is the default environment.|False|String|.*|
 |API Root|API root of the Palo Alto Prisma Cloud instance.|True|String|https://api3.prismacloud.io|
@@ -84,8 +86,6 @@ Pull alerts from Palo Alto Prisma Cloud. Dynamic List works with the “policy.n
 |Max Alerts To Fetch|Number of alerts to process per one connector iteration. Max value is 1000. Default value is 100.|False|Int|100|
 |Use dynamic list as a blocklist|If checked, the dynamic list is used as a blocklist.|False|Boolean|false|
 |Verify SSL|If checked, verifies that the SSL certificate for the connection to the Palo Alto Prisma Cloud server is valid.|False|Boolean|false|
-|Proxy Server Address|The address of the proxy server to use.|False|String||
-|Proxy Username|The proxy username to authenticate with.|False|String||
 |Proxy Password|The proxy password to authenticate with.|False|Password|*****|
 
 

@@ -149,8 +149,8 @@ Timeout - 600 Seconds
 
 |Name|Description|IsMandatory|Type|DefaultValue|
 |----|-----------|-----------|----|------------|
-|Data Table Name|The display name of the data table to search.|True|String||
 |Column|A comma-separated list of columns to search within the data table. If no value is provided, the action searches all columns.|False|String||
+|Data Table Name|The display name of the data table to search.|True|String||
 |CIDR|The comma-separated list of CIDR values to search for in the data table.|True|String||
 |Max Data Table Rows To Return|The number of data table rows to return for every matched value. Maximum: 1000.|True|String|1000|
 

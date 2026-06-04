@@ -219,9 +219,9 @@ Timeout - 600 Seconds
 
 |Name|Description|IsMandatory|Type|DefaultValue|
 |----|-----------|-----------|----|------------|
-|Subject|The subject of the email|True|String||
 |Send to|Recipient email address. Multiple addresses can be separated by commas|True|String||
 |CC|CC email address. Multiple addresses can be separated by commas|False|String||
+|Subject|The subject of the email|True|String||
 |BCC|BCC email address. Multiple addresses can be separated by commas|False|String||
 |Attachments Paths|Full path to attachments to be uploaded. Comma sepreated. e.g. C:\Desktop\x.txt,C:\Desktop\sample.txt|False|String||
 |Mail content|Mail body|True|EmailContent||
@@ -438,7 +438,6 @@ Timeout - 600 Seconds
 
 |Name|Description|IsMandatory|Type|DefaultValue|
 |----|-----------|-----------|----|------------|
-|Unmark All Matching Emails|Filter condition, specify if action should Unmark all matched by criteria emails from the mailbox or Unmark only first match.|False|Boolean|false|
 |Move items back to Inbox?|Should the action move the specified messages back to the inbox folder|False|Boolean|true|
 |Message IDs|Filter condition, specify emails with which email ids to find. Should accept comma separated list of message ids to unmark as junk. If message id is provided, subject, sender and recipient filters are ignored.|False|String||
 |Mailboxes list to perform on|Filter condition, If you have a specific list of mailboxes you would like to conduct the operation on, for better timing, please provide them here. Should accept a comma separated list of mail addresses to unmark the messages as junk in. If a mailboxes list is provided, "Perform Action in all Mailboxes" parameter will be ignored.|False|String||
@@ -446,6 +445,7 @@ Timeout - 600 Seconds
 |Subject Filter|Filter condition, specify subject to search for emails|False|String||
 |Sender Filter|Filter condition, specify who should be the sender of needed emails|False|String||
 |Recipient Filter|Filter condition, specify who should be the recipient of needed emails|False|String||
+|Unmark All Matching Emails|Filter condition, specify if action should Unmark all matched by criteria emails from the mailbox or Unmark only first match.|False|Boolean|false|
 |Perform action in all mailboxes|If checked, move to junk and block sender emails in all mailboxes accessible with current impersonalization settings. If delegated access is used, implicitly specify the mailboxes to search in the "Mailboxes" parameter.|False|Boolean|false|
 |How many mailboxes to process in a single batch|In case "Perform action  in all mailboxes" is checked, action works in batches, this parameter controls how many mailboxes action should process in single batch (single connection to mail server).|False|String|25|
 |Time Frame (minutes)|Filter condition, specify in what time frame in minutes should action look for emails.|False|String||

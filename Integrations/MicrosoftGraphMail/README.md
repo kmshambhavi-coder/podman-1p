@@ -113,6 +113,9 @@ Timeout - 600 Seconds
 
 |Name|Description|IsMandatory|Type|DefaultValue|
 |----|-----------|-----------|----|------------|
+|Select All Fields For Return|If enabled, action will return all available fields for the found email.|False|Boolean|false|
+|Limit the Amount of Information Returned in the JSON Result|If enabled, the amount of information returned by the action will be limited only to the key email fields.|False|Boolean|false|
+|How many mailboxes to process in a single batch|Specify how many mailboxes action should process in a single batch (single connection to O365). If nothing is provided, default value of 25 will be used.|False|String||
 |Search in Mailbox|By default, the search will be executed in the default mailbox specified in the integration configuration. If permissions allow, action can search in other mailboxes as well. Parameter accepts multiple values as a comma separated string. Note that it’s not recommended to perform a search against a big number of mailboxes with this action, for complex searches it is recommended to use Exchange Extension Pack.|True|String|Default Mailbox|
 |Folder Name|Specify the mailbox folder to search in. '/' separator can be used to specify a subfolder to search in, example: Inbox/Subfolder|True|String|Inbox|
 |Subject Filter|Specify the subject of the email to search for. Filter works with “contains” logic.|False|String||
@@ -120,9 +123,6 @@ Timeout - 600 Seconds
 |Time Frame (minutes)|Specify time frame in minutes to search emails for.|False|String||
 |Max Emails To Return|Specify how many emails action should return. If value is not provided, API default is used.|False|String||
 |Only Unread|If enabled, action will search only for unread emails.|False|Boolean|false|
-|Select All Fields For Return|If enabled, action will return all available fields for the found email.|False|Boolean|false|
-|How many mailboxes to process in a single batch|Specify how many mailboxes action should process in a single batch (single connection to O365). If nothing is provided, default value of 25 will be used.|False|String||
-|Limit the Amount of Information Returned in the JSON Result|If enabled, the amount of information returned by the action will be limited only to the key email fields.|False|Boolean|false|
 |Disable the Action JSON Result|If enabled, action will not return JSON result.|False|Boolean|false|
 
 
@@ -380,6 +380,8 @@ Connector can be used to fetch emails from the Microsoft Graph Mail service. Con
 
 |Name|Description|IsMandatory|Type|DefaultValue|
 |----|-----------|-----------|----|------------|
+|Proxy Username|The proxy username to authenticate with.|False|String||
+|Proxy Server Address|The address of the proxy server to use.|False|String||
 |Environment Field Name|Describes the name of the field where the environment name is stored.If environment field isn't found, environment is ""|False|String||
 |Environment Regex Pattern|A regex pattern to run on the value found in the "Environment Field Name" field.Default is .* to catch all and return value unchanged.Used to allow the user to manipulate the environment field via regex logicIf regex pattern is null or empty, or the environment value is null, the final environment result is ""|False|String|.*|
 |Email exclude pattern|Regular expression to exclude specific emails from being ingested by the connector. Works with both subject and body part of email. Example is, to exclude mass mailing emails like news from being ingested.|False|String||
@@ -402,8 +404,6 @@ Connector can be used to fetch emails from the Microsoft Graph Mail service. Con
 |Headers to add to events|Specify what values should be filtered from the "internetMessageHeaders" list and what will be added to the Siemplify event. By default, all headers are added, if only specific headers are needed - specify them as a comma separated list by their name, example: "DKIM-Signature", "Received", "From". If no internetHeaders should be added specify a keyword: None|False|String||
 |Case Name Template|When provided, connector will add a new key called "custom_case_name" to the Siemplify Event. It can used to have a customer case name. Please refer to the documentation portal for more details. You can provide placeholders in the following format: [name of the field]. Example: Phishing - [event_mailbox]. Note: connector will use first Siemplify Event for placeholders. Only keys that have string value will be handled.|False|String||
 |Alert Name Template|If provided, connector will use this value for Siemplify Alert Name. Please refer to the documentation portal for more details. You can provide placeholders in the following format: [name of the field]. Example: Phishing - [event_mailbox]. Note: connector will use first Siemplify Event for placeholders. Only keys that have string value will be handled. If nothing is provided or user provides an invalid template, connector will use the default alert name.|False|String||
-|Proxy Server Address|The address of the proxy server to use.|False|String||
-|Proxy Username|The proxy username to authenticate with.|False|String||
 |Proxy Password|The proxy password to authenticate with.|False|Password|*****|
 |Mail field source|If enabled, user's mailbox address will be fetched from the 'mail' attribute of user's details. Otherwise, user's mailbox address will be fetched from the 'userPrincipalName' field.|False|Boolean|false|
 |Verify SSL|If enabled, verify the SSL certificate for the connection to the Microsoft Graph Mail server is valid.|False|Boolean|true|

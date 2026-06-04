@@ -116,6 +116,7 @@ Timeout - 600 Seconds
 
 |Name|Description|IsMandatory|Type|DefaultValue|
 |----|-----------|-----------|----|------------|
+|Field 10|The dynamic fields for the query to generate the report|False|String|None|
 |Report Full Path (URI)|Specify the URI to the report. Example: /All Reports/ArcSight Foundation/MITRE ATT&CK/Mitre ATT&CK Summary|True|String|None|
 |Field 2|The dynamic fields for the query to generate the report|False|String|None|
 |Field 3|The dynamic fields for the query to generate the report|False|String|None|
@@ -125,7 +126,6 @@ Timeout - 600 Seconds
 |Field 7|The dynamic fields for the query to generate the report|False|String|None|
 |Field 8|The dynamic fields for the query to generate the report|False|String|None|
 |Field 9|The dynamic fields for the query to generate the report|False|String|None|
-|Field 10|The dynamic fields for the query to generate the report|False|String|None|
 
 
 

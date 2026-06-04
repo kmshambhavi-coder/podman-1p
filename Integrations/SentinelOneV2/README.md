@@ -519,12 +519,12 @@ Pull threats from SentinelOne.
 
 |Name|Description|IsMandatory|Type|DefaultValue|
 |----|-----------|-----------|----|------------|
-|Max Alerts Per Cycle|How many alerts should be processed during one connector run.|True|Int|25|
 |API Root|Address of SentinelOne API root.|True|String|https://usea1-partners.sentinelone.net/|
 |API Token|SentinelOne API token.|True|Password|*****|
 |Verify SSL|If enabled, verify the SSL certificate for the connection to the Sentinel public cloud server is valid.|False|Boolean|TRUE|
 |Fetch Max Days Backwards|Number of days before the first connector iteration to retrieve threats from. This parameter applies to the initial connector iteration after you enable the connector for the first time, or used as a fallback value in cases where connector's last run timestamp expires.|False|Int|1|
 |Disable Overflow|If enabled, connector will ignore the overflow mechanism.|False|Boolean|false|
+|Max Alerts Per Cycle|How many alerts should be processed during one connector run.|True|Int|25|
 |Event Object Type Filter|A comma-separated list of event objects that need to be returned alongside threat info. This parameter is used as a filter to only return certain objects. Examples: process,ip,indicators. If nothing is provided, the connector will ingest all event object types.|False|String||
 |Event Type Filter|A comma-separated list of event types that need to be returned alongside threat info. This parameter is used as a filter to only return certain event types. Examples: Process Creation, Behavioral Indicators.|False|String||
 |Max Events To Return|How many events to return per threat. Maximum: 199.|False|Int|199|

@@ -118,6 +118,7 @@ OpenSearch DSL Connector
 
 |Name|Description|IsMandatory|Type|DefaultValue|
 |----|-----------|-----------|----|------------|
+|Alert Severity|Severity of the alerts. Possible value: Info, Low, Medium, High, Critical. Note: this parameter has priority over “Severity Field Name“. If you want to work with “Severity Field Name“, this field should be left empty.|False|String||
 |Server Address|The OpenSearch server address, i.e: http://{ip_address}:{port}|True|String||
 |Username|OpenSearch username|False|String||
 |CA Certificate File|CA Certificate File|False|String||
@@ -127,7 +128,6 @@ OpenSearch DSL Connector
 |Verify SSL|Whether to use ssl on connection or not|False|Boolean|FALSE|
 |Alert Field Name|The name of the field where the alert name is located. e.g. _source_info_alertname|True|String||
 |Alert Description Field|The name of the field where the description is located. e.g. _source_alert_info_description|False|String||
-|Alert Severity|Severity of the alerts. Possible value: Info, Low, Medium, High, Critical. Note: this parameter has priority over “Severity Field Name“. If you want to work with “Severity Field Name“, this field should be left empty.|False|String||
 |Severity Field Name|If you want to map severity based on the string value then you would need to create a mapping file. Please refer to documentation portal for more details.|False|String||
 |Timestamp Field|The name of the field where the timestamp is located (flat field path). e.g. _source_@timestamp|True|String||
 |Environment Field Name|The name of the field where the environment name is stored. If the environment field isn't found, the environment is ''|False|String||
