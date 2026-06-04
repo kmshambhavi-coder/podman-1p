@@ -50,3 +50,5 @@ A custom connector created to trigger playbooks by a given alert product, name a
 
 
 
+
+Readme text
