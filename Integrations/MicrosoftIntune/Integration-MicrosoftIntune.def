@@ -1,0 +1,79 @@
+{
+    "Name": null,
+    "UpdateAvailable": null,
+    "LatestVersion": null,
+    "Id": 0,
+    "Identifier": "MicrosoftIntune",
+    "Custom": false,
+    "Parameters": [
+        {
+            "Id": 0,
+            "Mandatory": true,
+            "DefaultValue": "https://login.microsoftonline.com",
+            "Description": "Azure AD endpoint to connect to. Can be different for different tenant types.",
+            "DisplayName": "Azure AD endpoint",
+            "PropertyName": "Azure AD endpoint",
+            "Type": "String"
+        },
+        {
+            "Id": 0,
+            "Mandatory": true,
+            "DefaultValue": "https://graph.microsoft.com",
+            "Description": "Microsoft Graph endpoint to connect to. Can be different for different tenant types.",
+            "DisplayName": "Microsoft Graph Endpoint",
+            "PropertyName": "Microsoft Graph Endpoint",
+            "Type": "String"
+        },
+        {
+            "Id": 0,
+            "Mandatory": true,
+            "DefaultValue": "",
+            "Description": "Specify the client (Application) ID of the Azure AD app to use for the integration.",
+            "DisplayName": "Client ID",
+            "PropertyName": "Client ID",
+            "Type": "String"
+        },
+        {
+            "Id": 0,
+            "Mandatory": true,
+            "DefaultValue": null,
+            "Description": "Specify the client secret value (not secret ID!) of the Azure AD app to use for the integration.",
+            "DisplayName": "Client Secret Value",
+            "PropertyName": "Client Secret Value",
+            "Type": "Password"
+        },
+        {
+            "Id": 0,
+            "Mandatory": true,
+            "DefaultValue": "",
+            "Description": "Specify the Azure Active Directory ID (Tenant ID). It can be found on Azure Active Directory page > App Registration > <Application you configured for your integration> > Directory (tenant) ID.",
+            "DisplayName": "Azure Active Directory ID",
+            "PropertyName": "Azure Active Directory ID",
+            "Type": "String"
+        },
+        {
+            "Id": 0,
+            "Mandatory": false,
+            "DefaultValue": "true",
+            "Description": "If enabled, verify the SSL certificate for the connection to the Microsoft Intune server is valid.",
+            "DisplayName": "Verify SSL",
+            "PropertyName": "Verify SSL",
+            "Type": "Boolean"
+        }
+    ],
+    "Certified": false,
+    "ProductionIdentifier": null,
+    "Type": "Response",
+    "Internal": false,
+    "Version": "8",
+    "DisplayName": "Microsoft Intune",
+    "Description": "Microsoft Intune is a cloud-based endpoint management solution. It manages user access and simplifies app and device management across your many devices, including mobile devices, desktop computers, and virtual endpoints.",
+    "ImageBase64": "iVBORw0KGgoAAAANSUhEUgAAAJ4AAABSCAIAAAAqzfrjAAAMP2lDQ1BJQ0MgUHJvZmlsZQAASImVVwdYU8kWnluSkEAIEEBASuhNkE4AKSG0ANKLYCMkAUKJMRBU7OiigmsXC9jQVRHFDogdsbMI9r5YEFDWxYJdeZMCuu4r35vvmzv//efMf86cmVsGANoprlici2oAkCcqkMSFBjLGpKQySF0AB9qABnSBI5eXL2bFxEQCWAbbv5d3NwEia685yLT+2f9fiyZfkM8DAImBOJ2fz8uD+BAAeCVPLCkAgCjjzacUiGUYVqAtgQFCvFCGMxW4UobTFXif3CYhjg1xMwAqalyuJBMA9TbIMwp5mVBDvQ9iJxFfKAKAxoDYLy9vEh/iNIhtoI0YYpk+M/0Hncy/aaYPaXK5mUNYMRd5UQkS5otzudP+z3T875KXKx30YQWrWpYkLE42Z5i32zmTImRYDeJeUXpUNMRaEH8Q8uX2EKOULGlYosIeNeTls2HO4CoD1InPDYqA2BDiEFFuVKSST88QhnAghjsEnSos4CRArAfxQkF+cLzSZrNkUpzSF1qXIWGzlPwFrkTuV+broTQnkaXUf50l4Cj1MfWirIRkiCkQWxQKk6IgVofYMT8nPkJpM6ooix01aCORxsnit4A4TiAKDVToY4UZkpA4pX1pXv7gfLHNWUJOlBIfKMhKCFPkB2vmceXxw7lgbQIRK3FQR5A/JnJwLnxBULBi7li3QJQYr9T5IC4IjFOMxSni3BilPW4myA2V8WYQu+UXxivH4kkFcEMq9PEMcUFMgiJOvCibGx6jiAdfBiIBGwQBBpDCmg4mgWwgbO2t74V3ip4QwAUSkAkEwEHJDI5IlveI4DUeFIE/IRKA/KFxgfJeASiE/NchVnF1ABny3kL5iBzwDOI8EAFy4b1UPko05C0JPIWM8B/eubDyYLy5sMr6/z0/yH5nWJCJVDLSQY8M2qAlMZgYRAwjhhBtcQPcD/fBI+E1AFYXnIl7Dc7juz3hGaGd8Jhwg9BBuDNRWCz5KcrRoAPqhyhzkf5jLnArqOmOB+K+UB0q47q4AXDA3aAfFu4PPbtDlq2MW5YVxk/af5vBD6uhtCM7kVHyMHIA2ebnkep26u5DKrJc/5gfRazpQ/lmD/X87J/9Q/b5sI342RJbiB3EzmOnsYvYMaweMLCTWAPWgh2X4aHd9VS+uwa9xcnjyYE6wn/4G1xZWSbznWqcepy+KPoKBFNl72jAniSeJhFmZhUwWPCLIGBwRDzHEQwXJxdXAGTfF8Xr602s/LuB6LZ85+b9AYDvyYGBgaPfufCTAOz3hI//ke+cDRN+OlQBuHCEJ5UUKjhcdiHAtwQNPmn6wBiYAxs4HxfgAXxAAAgG4SAaJIAUMAFGnwX3uQRMATPAXFACysAysBqsB5vAVrAT7AEHQD04Bk6Dc+AyaAM3wD24ezrBC9AH3oHPCIKQECpCR/QRE8QSsUdcECbihwQjkUgckoKkIZmICJEiM5B5SBmyAlmPbEGqkf3IEeQ0chFpR+4gj5Ae5DXyCcVQNVQbNUKt0JEoE2WhEWgCOh7NRCejReh8dAm6Fq1Cd6N16Gn0MnoD7UBfoP0YwFQxXcwUc8CYGBuLxlKxDEyCzcJKsXKsCqvFGuE6X8M6sF7sI07E6TgDd4A7OAxPxHn4ZHwWvhhfj+/E6/Bm/Br+CO/DvxGoBEOCPcGbwCGMIWQSphBKCOWE7YTDhLPwWeokvCMSibpEa6InfBZTiNnE6cTFxA3EvcRTxHbiE2I/iUTSJ9mTfEnRJC6pgFRCWkfaTTpJukrqJH1QUVUxUXFRCVFJVRGpFKuUq+xSOaFyVaVL5TNZg2xJ9iZHk/nkaeSl5G3kRvIVcif5M0WTYk3xpSRQsilzKWsptZSzlPuUN6qqqmaqXqqxqkLVOaprVfepXlB9pPpRTUvNTo2tNk5NqrZEbYfaKbU7am+oVKoVNYCaSi2gLqFWU89QH1I/qNPVHdU56nz12eoV6nXqV9Vf0sg0SxqLNoFWRCunHaRdofVqkDWsNNgaXI1ZGhUaRzRuafRr0jWdNaM18zQXa+7SvKjZrUXSstIK1uJrzdfaqnVG6wkdo5vT2XQefR59G/0svVObqG2tzdHO1i7T3qPdqt2no6XjppOkM1WnQue4Tocupmuly9HN1V2qe0D3pu6nYUbDWMMEwxYNqx12ddh7veF6AXoCvVK9vXo39D7pM/SD9XP0l+vX6z8wwA3sDGINphhsNDhr0Dtce7jPcN7w0uEHht81RA3tDOMMpxtuNWwx7DcyNgo1EhutMzpj1GusaxxgnG28yviEcY8J3cTPRGiyyuSkyXOGDoPFyGWsZTQz+kwNTcNMpaZbTFtNP5tZmyWaFZvtNXtgTjFnmmeYrzJvMu+zMLEYbTHDosbiriXZkmmZZbnG8rzleytrq2SrBVb1Vt3WetYc6yLrGuv7NlQbf5vJNlU2122JtkzbHNsNtm12qJ27XZZdhd0Ve9Tew15ov8G+fQRhhNcI0YiqEbcc1BxYDoUONQ6PHHUdIx2LHesdX460GJk6cvnI8yO/Obk75Tptc7rnrOUc7lzs3Oj82sXOhedS4XLdleoa4jrbtcH1lZu9m8Bto9ttd7r7aPcF7k3uXz08PSQetR49nhaeaZ6VnreY2swY5mLmBS+CV6DXbK9jXh+9PbwLvA94/+Xj4JPjs8une5T1KMGobaOe+Jr5cn23+Hb4MfzS/Db7dfib+nP9q/wfB5gH8AO2B3SxbFnZrN2sl4FOgZLAw4Hv2d7smexTQVhQaFBpUGuwVnBi8PrghyFmIZkhNSF9oe6h00NPhRHCIsKWh93iGHF4nGpOX7hn+Mzw5gi1iPiI9RGPI+0iJZGNo9HR4aNXjr4fZRkliqqPBtGc6JXRD2KsYybHHI0lxsbEVsQ+i3OOmxF3Pp4ePzF+V/y7hMCEpQn3Em0SpYlNSbSkcUnVSe+Tg5JXJHeMGTlm5pjLKQYpwpSGVFJqUur21P6xwWNXj+0c5z6uZNzN8dbjp46/OMFgQu6E4xNpE7kTD6YR0pLTdqV94UZzq7j96Zz0yvQ+Hpu3hveCH8Bfxe8R+ApWCLoyfDNWZHRn+mauzOzJ8s8qz+oVsoXrha+yw7I3Zb/Pic7ZkTOQm5y7N08lLy3viEhLlCNqnmQ8aeqkdrG9uETcMdl78urJfZIIyfZ8JH98fkOBNvyRb5HaSH+RPir0K6wo/DAlacrBqZpTRVNbptlNWzStqyik6Lfp+HTe9KYZpjPmzng0kzVzyyxkVvqsptnms+fP7pwTOmfnXMrcnLm/FzsVryh+Oy95XuN8o/lz5j/5JfSXmhL1EknJrQU+CzYtxBcKF7Yucl20btG3Un7ppTKnsvKyL4t5iy/96vzr2l8HlmQsaV3qsXTjMuIy0bKby/2X71yhuaJoxZOVo1fWrWKsKl31dvXE1RfL3co3raGska7pWBu5tmGdxbpl676sz1p/oyKwYm+lYeWiyvcb+BuubgzYWLvJaFPZpk+bhZtvbwndUldlVVW+lbi1cOuzbUnbzv/G/K16u8H2su1fd4h2dOyM29lc7Vldvctw19IatEZa07N73O62PUF7Gmodarfs1d1btg/sk+57vj9t/80DEQeaDjIP1h6yPFR5mH64tA6pm1bXV59V39GQ0tB+JPxIU6NP4+Gjjkd3HDM9VnFc5/jSE5QT808MnCw62X9KfKr3dObpJ00Tm+6dGXPmenNsc+vZiLMXzoWcO3Oedf7kBd8Lxy56XzxyiXmp/rLH5boW95bDv7v/frjVo7XuiueVhjavtsb2Ue0nrvpfPX0t6Nq565zrl29E3Wi/mXjz9q1xtzpu829338m98+pu4d3P9+bcJ9wvfaDxoPyh4cOqP2z/2Nvh0XH8UdCjlsfxj+894T158TT/6ZfO+c+oz8q7TLqqu126j/WE9LQ9H/u884X4xefekj81/6x8afPy0F8Bf7X0jenrfCV5NfB68Rv9Nzveur1t6o/pf/gu793n96Uf9D/s/Mj8eP5T8qeuz1O+kL6s/Wr7tfFbxLf7A3kDA2KuhCv/FcBgRTMyAHi9AwBqCgB0eD6jjFWc/+QFUZxZ5Qj8J6w4I8qLBwC18P89thf+3dwCYN82ePyC+rRxAMRQAUjwAqir61AdPKvJz5WyQoTngM0xX9Pz0sG/KYoz5w9x/9wCmaob+Ln9F/unfHX7cmttAAAAOGVYSWZNTQAqAAAACAABh2kABAAAAAEAAAAaAAAAAAACoAIABAAAAAEAAACeoAMABAAAAAEAAABSAAAAAM4Ga58AAAm+SURBVHgB7ZxNbFVFFMdb464R6saNJrZLiBFc1YVGbCIbQ6iBBeqCr4g7WqIuiBpKMLrAhFd2kkBhYWgiBJC4EGOBuJCugIi4sxhxIRs+lHX93feHw3Dfu/fdj3enz9tpXl7mnTlzzsz5n3PmzNwL/QsLC33hr44WeKKOiwpriiwQoK2tHwRoA7S1tUBtFxaiNkBbWwvUdmEhagO0tbVAbRcWojZAW1sL1HZhIWoDtLW1QG0XFqI2QFtbC9R2YSFqA7S1tUBtFxaiNkBbWwvUdmEhagO0tbVAbRcWojZAW1sL1HZhT+Za2Y2bt46dmM01pADz5o2jQ889U2BgnYbcuXd/cNlAmRX153oPefjVHaBbRl+WsSzp9tWvs3DGeC5cuibKmpdfiHXx88r1eexFQ71y015zI2a4d2rm6IlZGpPjm/ZMbGpdSEZK7qjNKLcMmwAoIOH1tz/RqPmfDsXiHiBfenOXehfmT9PY25g5enIWvE8d2l1AV0VDwLVx5CzOvWXj6KqVw2iRR65eOZw3iPNBq/Vs2TA6/eXOKtaGuSenZspLPnZyds/4Y/5+5txcTOz4tnV9/X3jW9fF6Iv7U4nn1Fe7LfG89f4X+OX5458ZJeMMa1gh4904fmz9jek4hTiY3r+Tb5eThIEdk9KGel1+mPm4FGuni0oamKTaxGZv1BDasTdGMJDtu9iCNqYk2bh2IUP0D49t/fCgiAzZte8wxQSfp1e9S/Y2zKDASapUr+inz83BJgrf9JrwmCh63cmQYNk4NBCxKBWc7K/8lHAYIo3NGRqFIaYiS6OG0L7WrKGmnDAlP2MLKqYUi2BiYp0dmuKFfU4AyOgapUwAA1kBGMiT0Ce2reNDY7IxY+hKlLICosAGZomiDWwgPbZ2BEVIQ6xEwQ9FGypeSJuFuJSJvHsHFXL2v76h9Xy2fDCVfUguzskDx6Ui1yhj1tj5P/8efPEdPrfv/qsu2kOvvAfdFS5dWsvlX3+nCx4bsmbTx1Aah79FAnTaexrHTZEo09/8KIpJ1nD1IlO9qEDaqe8v8XNsx+euKPiZG5TzP/8iZo21nxBbKeLs+F1t1OKq+Knr+ylx08UuHBylOoLrIEGUpMi/2Dw1rV7xqAo98Ol2dmIlAA1cM/LgQEVAsyjCi4hUF8GnGkfFGj+hE8REJ9Og5KQI0gRI43TZ1hAJaW4TZ36IV3mSXOa7QminjpzVjsKeZMkqfa7Llw1gF5kmnTOlF2tG1W9f3+mmvZSN0ythOZ9bUtEGOZdiGsWszGnEoWcjOIGcb3wCpEGR3Mva+cYbrJeGu0DJuXM3OnB396/I4SfLDIiViX2HjZOtiPbmxwsZ67UGri3vlo2Mbg0MEbOpdVkD08ODcQka7Ms3baxJw3jaNpKUxpjbTuDOPxE26kIXYQqcaLw4F82BogyKOYpm6IodXF7q4skVZe2qoFWsmBoaoCuAXWKB9tH9O9MLIskkTLEsFQ0/O7pUlHin+m789egYQzLnQoNs2aoL5IAQPwA8Q0txySUDdFIUPBys6aXI2vrRQRydnI+HyeFgpqF5XpiLHG7VisfOYOoq+V1VQlbWKjm5tsM7Bp9GYTsBwLdtim0FQoRZYQ0qijZuTlDk7rU2FoEqVqls4YEf8EAUIKWUMMWJ2Y8YAl0Tfr65AcvJ4IdIF55HA9UpM0QdctiMJcem0bFRVdRyuJQj2wxwf6tEjJirQZGi7TPLqAjRDaPcVDCTLPxcAAGVm1qopDB627Fc7RLixCL7qBjAFQm00cteC2bsR7YlsXaBx7fC2gaiQgPbKoKIN1y5Hh3M+OiKNIkzRq8KWgoZUo05Gu7c+HS7HDA2g+w//7h5Kx1abIo0w4M5kCFRLRVYXwz6uX7tCJFkzPRy80zAXb0+TzUHBjZbMCYJGaeGIwqjq7QmuE0LvZQLSGPtTBhRtN3eyYno3Iyiu/fuMwGYTRFjW3WR0lGtWUl11u+OxyOXgRMYn+znWs5nHP7cU5orLW/bPYnmHbsE+auKWnmW661ZfS3wdckCVZVRXZpeEFPcAj0KLbVG8TWFkU0L9Ci0nPF1eAgwFbZAj0JLRcrJQRcOhde2xAcWKaM41dixrFLzcZLjkMAVXezgUanS2gjPBy0nMOKJjdDbXogi3Ojydwfcw1+S9blLgp/jZqjMMVE+aDlQ84g7yyViW+yzB58NZwiXA1lwZTHcEvDJeOdFtue+jKtmPZBIcpf/Lz0ftFyj8MmyWh7nGTziBySue5LGitmw5/UROAk+cDVi0thidN0V26PTYkJ6eVQ+aKtbCVkXdNlWLZdyTcjdZGGNpBb2acIdgTzGufLbPI9UucvFUVBEcCv3UDfw/0HjryLSaxNgODz8hIgf8OHKEIF6NYfn9rGHQsjUE3W6uHqsyCOzG6QSaLGIotCdBxToGVMrN+Yl8yS6eMCCOj42GZ7TsW3zky7NjSt+PkALMBAJYoMWCCHyDHFo4yhPJngWBLQAbIvCLexSOvaaLbguevXX/cMPNk16pyL7YaYkrmZ9JsNjADYCEMXcgEoEAx4UcIKNxJCyTZgcNRgOYPBTc0DBJ5CvBsALTnp5Uut6T0yIt59lo5Y14NqaLg86eNSlPNZ2AdgCZmxKytLzS9iU8drylycSspbViUgAUNgBg/IH37QzKuIxrWKapzHENGvnw3L03gGIqpdnO4p4gJeWjPK7y9YFaC25ZZmZzAH8xqyMZz+726jasopaOTcbLa/LuPMX8C7FZ7sstNhOrlp40ha+hSX0yEB3G8YsfAT8Yk2vLLSkI7afxZp9j+gVipRUJb28u8spC213Z0OdhZmSZJLfkrq6ReeMJFEEXHZ1vKND7c3+atCSolmIKrVuzS2vnN6C1s1plCqDTw1ga3djzru8FH5KOQCIXm+bu0YFRE2+a98AE+CETWGVUgy2yuRVKYQwhIsa0MUnVC1Slrcye6N0//BTbOqtwYqVsZcLtiSnvLLLpQSo8DqSOGm71a/eX1/+8I1frkToBQbqdviZgG6+QAWQCETuok3ag7EPJcPvCqfNrqR7D6QxZ6rx9JfZNMNKv/P9q/jqpoKJ9e84OqoAklY/6DgqiaH1fNJKSRrbls5CQLptl2dir0DredlLQV2vJOSlYGvPawzQeja4P3UBWn+29qwpQOvZ4P7UBWj92dqzpgCtZ4P7Uxeg9Wdrz5oCtJ4N7k9dgNafrT1rCtB6Nrg/dQFaf7b2rClA69ng/tQFaP3Z2rOmAK1ng/tTF6D1Z2vPmgK0ng3uT12A1p+tPWsK0Ho2uD91AVp/tvasKUDr2eD+1AVo/dnas6YArWeD+1P3H/oBxRfNNaJOAAAAAElFTkSuQmCC",
+    "SvgIcon": "<svg xmlns=\"http://www.w3.org/2000/svg\" id=\"Layer_1\" viewBox=\"0 0 25 25\"><defs><style>.cls-1{fill-rule:evenodd}</style></defs><path d=\"m19.08 16.38 2.74-1.97-2.74-1.97v3.94Zm-3.46 1.18c-4.17 0-3.86-.66-3.86-3.15H8.3c0 2.49.32 3.15-3.86 3.15v1.05h11.17v-1.05Z\" class=\"cls-1\"/><path d=\"M10.04 10.71c-.22 0-.44-.04-.65-.12-.21-.08-.39-.21-.55-.36a1.72 1.72 0 0 1-.37-.55c-.09-.2-.13-.42-.13-.64 0-.94.77-1.71 1.7-1.71s1.73.76 1.73 1.71c-.03.94-.8 1.68-1.73 1.68Zm9.04 5.8 2.74-2.1-2.74-2.1v4.2Z\" class=\"cls-1\"/><path d=\"M19.88 15.07v-1.31H2.33V4.31h15.42v3.54h1.33V3.79c0-.39-.4-.79-.8-.79H1.8c-.4 0-.8.39-.8.79v10.5c0 .39.4.79.8.79h6.51c.03 1.97-.05 2.49-3.86 2.49v1.05h11.17v-1.05c-3.8 0-3.88-.52-3.86-2.49h8.11Zm3.46-6.69H11.61c-.27-.6-.88-1.02-1.57-1.02-.96 0-1.73.76-1.73 1.68s.77 1.68 1.73 1.68c.72 0 1.33-.42 1.57-1.02h11.33v9.71h-5.32v-3.8h-1.06v4.85c0 .37.29.66.66.66h6.12c.37 0 .66-.29.66-.66V9.05c0-.37-.29-.66-.66-.66Zm-2.39 12.07h-1.33v-.39h1.33v.39Z\" class=\"cls-1\"/></svg>",
+    "PythonVersion": "V3_11",
+    "Categories": [
+        "Endpoint Security"
+    ],
+    "Staging": false,
+    "IsCustom": false
+}
