@@ -143,15 +143,15 @@ Sync closure of the tickets at the CA Desk Manager with Siemplify cases closure.
 |Name|Type|Is Mandatory|Value|
 |----|----|------------|-----|
 |API Root|String|False|http://x.x.x.x:<port>|
-|Username|String|False|dfghj|
-|Password|String|False|dfgvhbn|
+|Username|String|False|sfdghh|
+|Password|String|False|dfgv|
 |Group Filter|String|False|Test|
 |Group Field|String|False|group.combo_name|
 |Ticket Final Status|String|False|Closed|
 |Script Name|String|False|TEST CLOSE|
 
 
-Readme text## Case Federation Sync Job
+readme text## Case Federation Sync Job
 This job will sync case metadata to an external platform for central management.
 
 
