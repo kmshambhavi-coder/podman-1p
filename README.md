@@ -87,6 +87,12 @@
 |Palo Alto Wildfire|Cloud-based threat analysis and prevention engine for highly evasive zero-day exploits and malware.|
 
 
+## Connectors
+|Name|Description|Has Mappings|
+|----|-----------|------------|
+|Microsoft Azure Sentinel Incident Connector|DEPRECATED! Fetches Incidents from Azure Sentinel.|False|
+
+
 ## Playbooks
 |Name|Description|
 |----|-----------|
