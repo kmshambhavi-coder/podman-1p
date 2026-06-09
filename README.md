@@ -87,6 +87,13 @@
 |Palo Alto Wildfire|Cloud-based threat analysis and prevention engine for highly evasive zero-day exploits and malware.|
 
 
+## Connectors
+|Name|Description|Has Mappings|
+|----|-----------|------------|
+|101 AWS Cloud Trail - Insights Connector|Pull insights from AWS Cloud Trail.|False|
+|AWS Cloud Trail - Insights Connector|Pull insights from AWS Cloud Trail.|False|
+
+
 ## Playbooks
 |Name|Description|
 |----|-----------|
