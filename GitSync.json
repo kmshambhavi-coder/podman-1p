@@ -191,7 +191,9 @@
             "projects/spsstg-ck6l5/locations/us/instances/96356bda-a057-49d1-9692-34b4b2c9c3f6/integrations/SOCRadar/jobs/116/jobInstances/31": "Readme text",
             "projects/spsstg-ck6l5/locations/us/instances/96356bda-a057-49d1-9692-34b4b2c9c3f6/integrations/AzureSecurityCenter/jobs/84/jobInstances/66": "Readme text",
             "projects/spsstg-ck6l5/locations/us/instances/96356bda-a057-49d1-9692-34b4b2c9c3f6/integrations/Microsoft365Defender/jobs/93/jobInstances/65": "Readme text",
-            "projects/spsstg-ck6l5/locations/us/instances/96356bda-a057-49d1-9692-34b4b2c9c3f6/integrations/Microsoft365Defender/jobs/93/jobInstances/64": "Readme text"
+            "projects/spsstg-ck6l5/locations/us/instances/96356bda-a057-49d1-9692-34b4b2c9c3f6/integrations/Microsoft365Defender/jobs/93/jobInstances/64": "Readme text",
+            "projects/project/locations/location/instances/instance/integrations/MicrosoftAzureSentinel/jobs/29/jobInstances/5": "Readme text",
+            "projects/project/locations/location/instances/instance/integrations/CaServiceDesk/jobs/27/jobInstances/4": "Readme text"
         },
         "Block": {}
     },
